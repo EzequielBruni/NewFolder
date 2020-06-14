@@ -181,9 +181,14 @@ h5,
   margin-bottom: 0em;
 }
 
+/* MISCELLANEOUS */
+small {
+  font-size: .8em;
+}
+
 header, footer, section {
-  max-width: 1200px;
-  padding: 1em;
+  max-width: 1000px;
+  padding: .5em;
   margin: 0px auto;
 }
 /*# sourceMappingURL=style.css.map */
