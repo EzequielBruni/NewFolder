@@ -55,39 +55,99 @@ table {
 }
 
 /* TYPOGRAPHY */
-/*
-html,
-.root {
-    font-size: 16px;
-    line-height: 24px;
-    color: #444;
+/* FONT IMPORT */
+@font-face {
+  font-family: 'Tw Cen MT Condensed Extra Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tw Cen MT Condensed Extra Bold"), url("fonts/TCCEB.woff") format("woff");
 }
-@media screen and (min-width: 1000px) {
-    html,
-    .root {
-        font-size: 18px;
-        line-height: 27px;
-    }
+
+@font-face {
+  font-family: 'Rubik-Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rubik-Regular"), url("fonts/Rubik-Regular.ttf") format("ttf");
 }
-*/
-/* .9rem(14.4px) @ 30rem(480px) increasing to 1.12rem(17.92px) @ 120rem(1920px) */
-@media (min-width: 30rem) {
+
+@font-face {
+  font-family: 'Rubik-Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rubik-Italic"), url("fonts/Rubik-Italic.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rubik-Bold"), url("fonts/Rubik-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: 'Rubik-BoldItalic';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Rubik-BoldItalic"), url("fonts/Rubik-BoldItalic.ttf") format("ttf");
+}
+
+/* TYPE SCALING */
+@media (min-width: 768px) {
   :root {
-    font-size: calc(.9rem + ((1vw - 0.3rem) * 0.2444));
-    /* Where: * 0.2444 = 100 * font_Size_Difference / viewport_Width_Difference */
+    font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
+    min-height: 0vw;
   }
 }
 
-/* Prevent font scaling beyond this breakpoint */
-@media (min-width: 120rem) {
+@media (min-width: 1920px) {
   :root {
-    font-size: 1.12rem;
+    font-size: 20px;
   }
 }
 
+/* Base Styles */
 body {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-weight: normal;
+  margin: 1.05rem 0 1.05rem;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.488em;
+}
+
+h2 {
+  font-size: 2.074em;
+}
+
+h3 {
+  font-size: 1.728em;
+}
+
+h4 {
+  font-size: 1.44em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+small, .text_small {
+  font-size: 0.833em;
 }
 
 p,
@@ -140,55 +200,10 @@ sub {
   bottom: -0.25em;
 }
 
-/* HEADINGS */
-h1,
-.h1 {
-  font-size: 2.8125em;
-  line-height: 1.06666667em;
-  margin-top: 0.53333333em;
-  margin-bottom: 1.06666666em;
-}
-
-h2,
-.h2 {
-  font-size: 2em;
-  line-height: 1.5em;
-  margin-top: 0.75em;
-  margin-bottom: 0.75em;
-}
-
-h3,
-.h3 {
-  font-size: 1.4375em;
-  line-height: 1.04347826em;
-  margin-top: 1.04347826em;
-  margin-bottom: 0em;
-}
-
-h4,
-.h4 {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-}
-
-h5,
-.h5 {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-top: 1.5em;
-  margin-bottom: 0em;
-}
-
-/* MISCELLANEOUS */
-small {
-  font-size: .8em;
-}
-
 header, footer, section {
   max-width: 1000px;
-  padding: .5em;
+  padding: 1.65rem;
+  padding-bottom: 0;
   margin: 0px auto;
 }
 /*# sourceMappingURL=style.css.map */
