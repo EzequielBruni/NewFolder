@@ -1,8 +1,5 @@
-@import url(demo-page-styles/reset.scss); 
+@import "demo-page-styles/_reset.scss";
 
-@import url(NewFolder-components/compile.scss);
+@import "NewFolder-components/_compile.scss";
 
-@import url(demo-page-styles/layout.scss);
-@import url(demo-page-styles/preview-components.scss);
-
-
+@import "demo-page-styles/_layout.scss";

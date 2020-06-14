@@ -1,59 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* TYPOGRAPHY */
 /*
 html,
@@ -70,6 +14,8 @@ html,
     }
 }
 */
+
+
 /* .9rem(14.4px) @ 30rem(480px) increasing to 1.12rem(17.92px) @ 120rem(1920px) */
 @media (min-width: 30rem) {
   :root {
@@ -77,13 +23,13 @@ html,
     /* Where: * 0.2444 = 100 * font_Size_Difference / viewport_Width_Difference */
   }
 }
-
 /* Prevent font scaling beyond this breakpoint */
 @media (min-width: 120rem) {
   :root {
     font-size: 1.12rem;
   }
 }
+
 
 body {
   font-size: 1em;
@@ -109,6 +55,7 @@ ol ul {
 }
 
 /* Let's make sure all's aligned */
+
 hr,
 .hr {
   border: 1px solid;
@@ -140,7 +87,13 @@ sub {
   bottom: -0.25em;
 }
 
+
+
+
+
+
 /* HEADINGS */
+
 h1,
 .h1 {
   font-size: 2.8125em;
@@ -180,10 +133,3 @@ h5,
   margin-top: 1.5em;
   margin-bottom: 0em;
 }
-
-header, footer, section {
-  max-width: 1200px;
-  padding: 1em;
-  margin: 0px auto;
-}
-/*# sourceMappingURL=style.css.map */
