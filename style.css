@@ -230,6 +230,14 @@ a {
 }
 
 /* BLOCKQUOTE */
+blockquote {
+  margin-left: 3em;
+}
+
+blockquote p {
+  margin: 0px;
+}
+
 header, footer, section {
   max-width: 1000px;
   padding: 1.65rem;
