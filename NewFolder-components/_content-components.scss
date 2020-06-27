@@ -1,0 +1,42 @@
+/* Preformatted Text */
+
+pre {
+  background: lighten($dark-background, 10%);
+  color: $light-text;
+  font-size: .8rem;
+  padding: 1rem;
+
+  box-shadow: inset 0px 0px .5em 0px rgba(0,0,0,0.75);
+}
+
+
+/* Code Snippets */
+
+code {
+  font-family: $monospace-font;
+}
+
+pre code {
+  display: block;
+}
+
+p code {
+  background: $light-background;
+  padding: .3em;
+  font-size: .8em;
+
+  box-shadow: inset 0px 0px .2em 0px rgba(0,0,0,0.3);
+}
+
+
+/*  */
+
+
+
+
+/*  */
+
+
+
+
+/*  */

@@ -151,16 +151,6 @@ hr,
   margin: -1px 0;
 }
 
-a,
-b,
-i,
-strong,
-em,
-small,
-code {
-  line-height: 0;
-}
-
 sub,
 sup {
   line-height: 0;
@@ -213,7 +203,7 @@ sub {
   font-weight: bold;
   text-align: center;
   padding: .15em;
-  background-color: #f8e8e8;
+  background-color: #fceeee;
 }
 
 .content ol ol li:last-child {
@@ -236,6 +226,36 @@ blockquote p {
   margin: 0px;
 }
 
+/* Preformatted Text */
+pre {
+  background: #44726e;
+  color: white;
+  font-size: .8rem;
+  padding: 1rem;
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px rgba(0, 0, 0, 0.75);
+          box-shadow: inset 0px 0px 0.5em 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Code Snippets */
+code {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+pre code {
+  display: block;
+}
+
+p code {
+  background: #fceeee;
+  padding: .3em;
+  font-size: .8em;
+  -webkit-box-shadow: inset 0px 0px 0.2em 0px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 0px 0.2em 0px rgba(0, 0, 0, 0.3);
+}
+
+/*  */
+/*  */
+/*  */
 header {
   padding: 2rem 0 2rem 0;
   text-align: center;
@@ -252,7 +272,7 @@ footer, section {
 }
 
 footer {
-  background: #f8e8e8;
+  background: #fceeee;
   padding: 1rem;
 }
 
@@ -275,7 +295,7 @@ div.tertiarycolor {
 }
 
 div.lightbackground {
-  background: #f8e8e8;
+  background: #fceeee;
   color: #3a3a3a;
 }
 
