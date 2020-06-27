@@ -182,8 +182,41 @@ sub {
 }
 
 .content ol {
-  list-style: decimal;
-  padding-left: 1.5em;
+  counter-reset: li;
+  /* Initiate a counter */
+  margin-left: 0;
+  /* Remove the default left margin */
+  padding-left: 0;
+  /* Remove the default left padding */
+}
+
+.content ol > li {
+  position: relative;
+  /* Create a positioning context */
+  margin: 0 0 .5em 2em;
+  /* Give each list item a left margin to make room for the numbers */
+  list-style: none;
+  /* Disable the normal item numbering */
+}
+
+.content ol > li:before {
+  content: counter(li);
+  /* Use the counter as content */
+  counter-increment: li;
+  /* Increment the counter by 1 */
+  /* Position and style the number */
+  position: absolute;
+  top: -2px;
+  left: -2em;
+  width: 1.3em;
+  font-weight: bold;
+  text-align: center;
+  padding: .15em;
+  background-color: #f8e8e8;
+}
+
+.content ol ol li:last-child {
+  margin-bottom: 0;
 }
 
 /* LINKS */
