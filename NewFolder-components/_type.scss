@@ -68,6 +68,18 @@
   
   p {margin-bottom: 1.15rem;}
 
+  strong {
+    font-family: 'Rubik-Bold', sans-serif;
+  }
+
+  em {
+    font-family: 'Rubik-Italic', sans-serif;
+  }
+
+  strong > em, em > strong {
+    font-family: 'Rubik-BoldItalic', sans-serif;
+  }
+
   /* HEADINGS */
 
   h1, h2, h3, h4, h5, h6 {
@@ -93,56 +105,64 @@
   
   small, .text_small {font-size: 0.833em;}
 
-
-p,
-ul,
-ol,
-pre,
-table,
-blockquote {
-  margin-top: 0em;
-  margin-bottom: 1.5em;
-}
-
-ul ul,
-ol ol,
-ul ol,
-ol ul {
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-
-/* Let's make sure all's aligned */
-
-hr,
-.hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-
-a,
-b,
-i,
-strong,
-em,
-small,
-code {
-  line-height: 0;
-}
-
-sub,
-sup {
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sup {
-  top: -0.5em;
-}
-
-sub {
-  bottom: -0.25em;
-}
+/* GENERAL ALIGNMENTS */
 
 
+  p,
+  ul,
+  ol,
+  pre,
+  table,
+  blockquote {
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+  }
+
+  ul ul,
+  ol ol,
+  ul ol,
+  ol ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+
+  hr,
+  .hr {
+    border: 1px solid;
+    margin: -1px 0;
+  }
+
+  a,
+  b,
+  i,
+  strong,
+  em,
+  small,
+  code {
+    line-height: 0;
+  }
+
+  sub,
+  sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+
+/* LISTS */
+
+
+
+/* LINKS */
+
+
+/* BLOCKQUOTE */
