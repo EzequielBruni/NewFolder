@@ -6,7 +6,8 @@
         "demo-page-styles/_reset.scss",
         "NewFolder-components/_compile.scss",
         "NewFolder-components/_type.scss",
-        "demo-page-styles/_layout.scss"
+        "demo-page-styles/_layout.scss",
+        "demo-page-styles/_preview-components.scss"
     ],
     "names": [],
     "file": "style.css"
