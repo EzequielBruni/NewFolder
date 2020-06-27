@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://www.fontify.me/wf/4082e37386d27ca11042496638664d37");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,41 +58,6 @@ table {
 
 /* TYPOGRAPHY */
 /* FONT IMPORT */
-@font-face {
-  font-family: 'Tw Cen MT Condensed Extra Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Tw Cen MT Condensed Extra Bold"), url("fonts/TCCEB.woff") format("woff");
-}
-
-@font-face {
-  font-family: 'Rubik-Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rubik-Regular"), url("fonts/Rubik-Regular.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Rubik-Italic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rubik-Italic"), url("fonts/Rubik-Italic.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Rubik-Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rubik-Bold"), url("fonts/Rubik-Bold.ttf") format("ttf");
-}
-
-@font-face {
-  font-family: 'Rubik-BoldItalic';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Rubik-BoldItalic"), url("fonts/Rubik-BoldItalic.ttf") format("ttf");
-}
-
 /* TYPE SCALING */
 @media (min-width: 768px) {
   :root {
@@ -107,7 +74,7 @@ table {
 
 /* Base Styles */
 body {
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 400;
   line-height: 1.65;
   color: black;
@@ -118,23 +85,18 @@ p {
 }
 
 strong {
-  font-family: 'Rubik-Bold', sans-serif;
+  font-weight: 700;
 }
 
 em {
-  font-family: 'Rubik-Italic', sans-serif;
-}
-
-strong > em, em > strong {
-  font-family: 'Rubik-BoldItalic', sans-serif;
+  font-style: italic;
 }
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+  font-family: font69674;
   font-weight: normal;
   margin: 1.05rem 0 1.05rem;
-  font-weight: 400;
   line-height: 1.15;
 }
 
@@ -232,6 +194,8 @@ a {
 /* BLOCKQUOTE */
 blockquote {
   margin-left: 3em;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1em;
 }
 
 blockquote p {
@@ -264,7 +228,7 @@ div.tertiarycolor {
 }
 
 div.lightbackground {
-  background: #e9d0d0;
+  background: #f8e8e8;
   color: black;
 }
 
