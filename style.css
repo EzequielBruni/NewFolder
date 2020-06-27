@@ -58,6 +58,7 @@ table {
 
 /* TYPOGRAPHY */
 /* FONT IMPORT */
+/* FONT IMPORT */
 /* TYPE SCALING */
 @media (min-width: 768px) {
   :root {
@@ -235,7 +236,12 @@ blockquote p {
   margin: 0px;
 }
 
-header, footer, section {
+header {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+footer, section {
   max-width: 1000px;
   padding: 1.65rem;
   padding-bottom: 0;
