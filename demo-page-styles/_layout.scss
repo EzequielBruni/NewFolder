@@ -1,9 +1,11 @@
 
 header {
-  padding-top: 2rem;
+  padding: 2rem 0 2rem 0;
   text-align: center;
+  background: $dark-background;
+  color: $light-text;
 
-  
+  font-family: $monospace-font;
 }
 
 
@@ -12,4 +14,10 @@ footer, section{
   padding: 1.65rem;
   padding-bottom: 0;
   margin: 0px auto;
+}
+
+
+footer {
+  background: $light-background;
+  padding: 1rem;
 }
