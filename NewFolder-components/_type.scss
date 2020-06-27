@@ -64,6 +64,7 @@
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
     line-height: 1.65;
+    color: $dark-text;
   }
   
   p {margin-bottom: 1.15rem;}
@@ -172,5 +173,8 @@
 
 /* LINKS */
 
+  a {
+    color: $secondary-color;
+  }
 
 /* BLOCKQUOTE */

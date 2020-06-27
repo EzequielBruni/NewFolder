@@ -110,6 +110,7 @@ body {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
   line-height: 1.65;
+  color: black;
 }
 
 p {
@@ -224,11 +225,42 @@ sub {
 }
 
 /* LINKS */
+a {
+  color: #e64848;
+}
+
 /* BLOCKQUOTE */
 header, footer, section {
   max-width: 1000px;
   padding: 1.65rem;
   padding-bottom: 0;
   margin: 0px auto;
+}
+
+div.primarycolor, div.secondarycolor, div.tertiarycolor, div.lightbackground, div.darkbackground {
+  padding: 1rem;
+  margin-top: .5rem;
+  color: white;
+}
+
+div.primarycolor {
+  background: #aa2323;
+}
+
+div.secondarycolor {
+  background: #e64848;
+}
+
+div.tertiarycolor {
+  background: #23aa98;
+}
+
+div.lightbackground {
+  background: #e9d0d0;
+  color: black;
+}
+
+div.darkbackground {
+  background: #31524f;
 }
 /*# sourceMappingURL=style.css.map */
