@@ -55,4 +55,32 @@ p code {
   p {
     font-size: .8em;
   }
+
+  &.mild {
+    border-color: $mildwarning-color;
+
+    h3, h4, h5 {
+      color: $mildwarning-color;
+    }
+  }
+
+  &.success {
+    border-color: $success-color;
+  }
+
+  &.warning {
+    border-color: $warning-color;
+  } 
+
+  &.float-left {
+    float: left;
+    max-width: 45%;
+    margin: 0 1.5rem 0 0;
+  }
+
+  &.float-right{
+    float: right;
+    max-width: 45%;
+    margin: 0 0 0 1.5rem;
+  }
 }

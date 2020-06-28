@@ -270,6 +270,34 @@ p code {
   font-size: .8em;
 }
 
+.alert.mild {
+  border-color: #d87300;
+}
+
+.alert.mild h3, .alert.mild h4, .alert.mild h5 {
+  color: #d87300;
+}
+
+.alert.success {
+  border-color: #24cf0d;
+}
+
+.alert.warning {
+  border-color: red;
+}
+
+.alert.float-left {
+  float: left;
+  max-width: 45%;
+  margin: 0 1.5rem 0 0;
+}
+
+.alert.float-right {
+  float: right;
+  max-width: 45%;
+  margin: 0 0 0 1.5rem;
+}
+
 header {
   padding: 2rem 0 2rem 0;
   text-align: center;
