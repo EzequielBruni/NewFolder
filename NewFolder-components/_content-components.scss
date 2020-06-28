@@ -29,7 +29,7 @@ p code {
 }
 
 
-/*  */
+/* IMAGES */
 
 
 
@@ -39,4 +39,19 @@ p code {
 
 
 
-/*  */
+/* ALERT BOXES */
+
+// Some general styles for alert boxes.
+
+.alert {
+  background: $light-background;
+  padding: 1rem;
+
+  h2, h3, h4, h5, p {
+    margin: 0;
+  }
+
+  p {
+    font-size: .8em;
+  }
+}

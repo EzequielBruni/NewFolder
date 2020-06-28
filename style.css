@@ -228,7 +228,7 @@ blockquote p {
 
 /* Preformatted Text */
 pre {
-  background: #44726e;
+  background: #446c72;
   color: white;
   font-size: .8rem;
   padding: 1rem;
@@ -253,13 +253,26 @@ p code {
           box-shadow: inset 0px 0px 0.2em 0px rgba(0, 0, 0, 0.3);
 }
 
+/* IMAGES */
 /*  */
-/*  */
-/*  */
+/* ALERT BOXES */
+.alert {
+  background: #fceeee;
+  padding: 1rem;
+}
+
+.alert h2, .alert h3, .alert h4, .alert h5, .alert p {
+  margin: 0;
+}
+
+.alert p {
+  font-size: .8em;
+}
+
 header {
   padding: 2rem 0 2rem 0;
   text-align: center;
-  background: #31524f;
+  background: #314e52;
   color: white;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -291,7 +304,7 @@ div.secondarycolor {
 }
 
 div.tertiarycolor {
-  background: #23aa98;
+  background: #239aaa;
 }
 
 div.lightbackground {
@@ -300,6 +313,6 @@ div.lightbackground {
 }
 
 div.darkbackground {
-  background: #31524f;
+  background: #314e52;
 }
 /*# sourceMappingURL=style.css.map */
