@@ -46,6 +46,7 @@ p code {
 .alert {
   background: $light-background;
   padding: 1rem;
+  border-left: .3rem solid $tertiary-color;
 
   h2, h3, h4, h5, p {
     margin: 0;
