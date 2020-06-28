@@ -2,7 +2,7 @@
 Todo:
   ☐ Finish alert boxes
     ☐ Icons?
-  ☐ Float styles for alert boxes
+    ✔ Float styles for alert boxes @done(20-06-28 18:04)
   ☐ Images styles, including floats, hero images, more
   ☐ Navigation Patterns
     ☐ Basic Site nav
