@@ -1,5 +1,25 @@
 
 Todo:
+  ☐ Finish alert boxes
+    ☐ Icons?
   ☐ Float styles for alert boxes
   ☐ Images styles, including floats, hero images, more
-
+  ☐ Navigation Patterns
+    ☐ Basic Site nav
+      ☐ Dropdowns?
+    ☐ Breadcrumbs
+    ☐ Category grid
+    ☐ Footer navigation
+  ☐ Forms
+    ☐ Text inputs
+    ☐ Message
+    ☐ Buttons
+    ☐ Checkboxes
+    ☐ Radio buttons
+  ☐ Headers
+    ☐ Text-based header
+    ☐ Hero image
+    ☐ Hero/text
+    ☐ Full-screen vs wrapped
+  ☐ Footer styles
+    ☐ Full screen vs wrapped
