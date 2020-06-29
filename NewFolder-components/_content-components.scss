@@ -44,9 +44,14 @@ p code {
 // Some general styles for alert boxes.
 
 .alert {
-  background: $light-background;
-  padding: 1rem;
+  background-color: $light-background;
+  padding: 1rem 1rem 1rem 2.5rem;
   border-left: .3rem solid $tertiary-color;
+
+  background-repeat: no-repeat;
+  background-position: -1rem -1rem;
+  background-size: 5rem;
+  background-blend-mode: overlay;
 
   h2, h3, h4, h5, p {
     margin: 0;
@@ -56,8 +61,19 @@ p code {
     font-size: .8em;
   }
 
+  &.generalinfo {
+    border-color: $tertiary-color;
+    @include icon-search-eye;
+
+    h3, h4, h5 {
+      color: $tertiary-color;
+    }
+
+  }
+
   &.mild {
     border-color: $mildwarning-color;
+    @include icon-warning-outline;
 
     h3, h4, h5 {
       color: $mildwarning-color;
@@ -66,10 +82,20 @@ p code {
 
   &.success {
     border-color: $success-color;
+    @include icon-checkmark-filled;
+
+    h3, h4, h5 {
+      color: $success-color;
+    }
   }
 
   &.warning {
     border-color: $warning-color;
+    @include icon-warning-filled;
+
+    h3, h4, h5 {
+      color: $warning-color;
+    }
   } 
 
   &.float-left {
