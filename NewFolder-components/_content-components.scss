@@ -116,6 +116,11 @@ figure {
     font-size: .8em;
   }
 
+  code {
+    background: $dark-background;
+    color: $light-text;
+  }
+
   &.generalinfo {
     border-color: $tertiary-color;
     @include icon-search-eye;
