@@ -36,7 +36,7 @@ img {
 }
 
 .content img {
-  border-left: .5rem solid $secondary-color;
+  border-left: .5rem solid $tertiary-color;
 }
 
 // Focused Images
@@ -67,7 +67,7 @@ figure {
 // In-content Text Background Images
 
 .in-content-text-bg {
-  border-left: .5rem solid $secondary-color;
+  border-left: .5rem solid $tertiary-color;
   display: flex;
   position: relative;
 
