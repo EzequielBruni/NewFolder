@@ -1,9 +1,9 @@
 
 Todo:
-  ☐ Finish alert boxes
-    ☐ Icons?
+  ✔ Finish alert boxes @done(20-07-01 21:40)
+    ✔ Icons? @done(20-07-01 21:40)
     ✔ Float styles for alert boxes @done(20-06-28 18:04)
-  ☐ Images styles, including floats, hero images, more
+  ☐ Image styles, including floats, hero images, more
   ☐ Navigation Patterns
     ☐ Basic Site nav
       ☐ Dropdowns?
@@ -23,3 +23,4 @@ Todo:
     ☐ Full-screen vs wrapped
   ☐ Footer styles
     ☐ Full screen vs wrapped
+  ☐ Refine mixins?
