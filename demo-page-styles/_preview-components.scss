@@ -31,19 +31,10 @@ div.accordiondemo {
 }
 
 
-div.fullpagesidebardemo {
-  display: grid;
-  margin-bottom: 1.5rem;
-}
 
 
-@media (min-width: 800px) {
-  
-  div.fullpagesidebardemo {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    gap: 1em 1em;
-    grid-template-areas: ". .";
+form {
+  > label {
+    display: block;
   }
-
 }
