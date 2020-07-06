@@ -9,20 +9,12 @@ Todo:
       ✔ Dropdowns? @done(20-07-05 05:35)
     ✔ Breadcrumbs @done(20-07-05 05:35)
     ✔ Centered Navigation Links @done(20-07-05 05:36)
-    ☐ Hamburger Navigation
-    ☐ Accordion Navigation
-    ☐ Category grid
+    ✔ Hamburger Navigation @done(20-07-05 20:06)
+    ✔ Accordion Navigation @done(20-07-05 20:06)
   ☐ Forms
     ☐ Text inputs
     ☐ Message
     ☐ Buttons
     ☐ Checkboxes
     ☐ Radio buttons
-  ☐ Headers
-    ☐ Text-based header
-    ☐ Hero image
-    ☐ Hero/text
-    ☐ Full-screen vs wrapped
-  ☐ Footer styles
-    ☐ Full screen vs wrapped
   ☐ Refine mixins?
