@@ -216,6 +216,10 @@ a {
   color: #e64848;
 }
 
+a:hover {
+  color: #239aaa;
+}
+
 /* BLOCKQUOTE */
 blockquote {
   margin-left: 3em;
@@ -270,11 +274,11 @@ nav.nav-bar ul li a {
   display: block;
   padding: .3rem;
   background: #fceeee;
-  margin-bottom: .1rem;
+  margin-bottom: 2px;
 }
 
 nav.nav-bar ul li a:hover {
-  background: #314e52;
+  background: #446c72;
   color: white;
 }
 
@@ -340,6 +344,10 @@ nav.dropdown ul li ul {
   margin-left: 1.5rem;
 }
 
+nav.dropdown ul li.drop > a:after {
+  content: " ▼";
+}
+
 nav.dropdown ul li.drop:hover ul {
   display: block;
 }
@@ -348,16 +356,13 @@ nav.dropdown ul li.drop:hover ul {
   nav.dropdown ul li {
     position: relative;
   }
-  nav.dropdown ul li.drop > a:after {
-    content: " ▼";
-  }
-  nav.dropdown ul li.drop ul {
+  nav.dropdown ul li ul {
     margin: 0;
     position: absolute;
     width: 100%;
   }
-  nav.dropdown ul li.drop ul li a {
-    margin-top: .1rem;
+  nav.dropdown ul li ul li a {
+    margin-top: 2px;
   }
 }
 
@@ -374,7 +379,7 @@ nav.centered ul {
 
 nav.centered ul li a {
   padding: 0rem .5rem 0rem .5rem;
-  border-right: 0.1rem solid #aa2323;
+  border-right: 0.1rem solid #e64848;
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -384,6 +389,39 @@ nav.centered ul li a:hover {
 
 nav.centered ul li:last-child a {
   border: 0;
+}
+
+nav.hamburger input[type=checkbox] {
+  display: none;
+}
+
+nav.hamburger label {
+  color: white;
+  padding: .3rem .5rem .3rem .5rem;
+  background: #446c72;
+}
+
+nav.hamburger > ul {
+  display: none;
+}
+
+nav.hamburger input:checked ~ ul {
+  display: block;
+}
+
+@media (min-width: 500px) {
+  nav.hamburger label {
+    display: none;
+  }
+  nav.hamburger > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+nav.breadcrumb {
+  outline: 0.1rem dashed #446c72;
 }
 
 nav.breadcrumb ul {
@@ -410,6 +448,34 @@ nav.breadcrumb ul li a:hover {
 
 nav.breadcrumb ul li:last-child a:after {
   content: "";
+}
+
+nav.accordion input[type=checkbox] {
+  display: none;
+}
+
+nav.accordion label {
+  padding: .3rem .5rem .3rem .5rem;
+  display: block;
+  border-top: 2px dashed #446c72;
+}
+
+nav.accordion label:after {
+  content: " ▼";
+}
+
+nav.accordion > ul {
+  display: none;
+}
+
+nav.accordion input:checked + ul {
+  display: block;
+}
+
+nav.accordion ul li a {
+  display: block;
+  padding: .3rem .5rem .3rem .5rem;
+  border-top: 1px dashed #aa2323;
 }
 
 /* Preformatted Text */
@@ -510,7 +576,7 @@ figure figcaption {
 }
 
 .alert code {
-  background: #314e52;
+  background: #446c72;
   color: white;
 }
 
@@ -553,7 +619,7 @@ figure figcaption {
 header {
   padding: 2rem 0 2rem 0;
   text-align: center;
-  background: #314e52;
+  background: #446c72;
   color: white;
   font-family: "IBM Plex Mono", monospace;
 }
@@ -567,7 +633,7 @@ footer, section {
 
 footer {
   background: #fceeee;
-  padding: 1rem;
+  padding: 1.65rem;
 }
 
 div.primarycolor, div.secondarycolor, div.tertiarycolor, div.lightbackground, div.darkbackground {
@@ -577,11 +643,11 @@ div.primarycolor, div.secondarycolor, div.tertiarycolor, div.lightbackground, di
 }
 
 div.primarycolor {
-  background: #aa2323;
+  background: #e64848;
 }
 
 div.secondarycolor {
-  background: #e64848;
+  background: #aa2323;
 }
 
 div.tertiarycolor {
@@ -594,6 +660,10 @@ div.lightbackground {
 }
 
 div.darkbackground {
-  background: #314e52;
+  background: #446c72;
+}
+
+div.accordiondemo {
+  max-width: 350px;
 }
 /*# sourceMappingURL=style.css.map */

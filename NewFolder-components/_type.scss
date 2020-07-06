@@ -172,8 +172,13 @@
 /* LINKS */
 
   a {
-    color: $secondary-color;
+    color: $primary-color;
+
+    &:hover {
+      color: $tertiary-color;
+    }
   }
+
 
 /* BLOCKQUOTE */
 

@@ -331,12 +331,16 @@ This is preformatted text!
 
     <h3>Hamburger Navigation</h3>
 
-    <div class="hamburger-nav">
-      <nav class="nav-bar dropdown">
+    <p>Resize the window to see the hamburger button in action.</p>
+
+      <nav class="nav-bar dropdown hamburger">
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+
         <ul>
           <li><a href="#">Nav Link 1</a></li>
           <li><a href="#">Nav Link 2</a></li>
-          <li><a href="#">Nav Link 3</a>
+          <li class="drop"><a href="#">Nav Link 3</a>
             <ul>
               <li><a href="#">Nav Link 1</a></li>
               <li><a href="#">Nav Link 2</a></li>
@@ -349,13 +353,13 @@ This is preformatted text!
           <li><a href="#">Nav Link 5</a></li>
         </ul>
       </nav>
-    </div>
 
     <hr>
 
     <h3>Breadcrumb Navigation</h3>
 
     <nav class="breadcrumb">
+      
       <ul>
         <li><a href="#">Nav Link 1</a></li>
         <li><a href="#">Nav Link 2</a></li>
@@ -368,6 +372,60 @@ This is preformatted text!
     <hr>
 
     <h3>Accordion Navigation</h3>
+
+    <div class="accordiondemo">
+
+      <nav class="accordion">
+        <label for="accordion1">Accordion Level 1</label>
+        <input type="checkbox" id="accordion1"/>
+
+        <ul>
+          <li><a href="#">Nav Link 1</a></li>
+          <li><a href="#">Nav Link 2</a></li>
+          <li><a href="#">Nav Link 3</a></li>
+          <li><a href="#">Nav Link 4</a></li>
+          <li><a href="#">Nav Link 5</a></li>
+        </ul>
+
+
+        <label for="accordion2">Accordion Level 2</label>
+        <input type="checkbox" id="accordion2"/>
+
+        <ul>
+          <li><a href="#">Nav Link 1</a></li>
+          <li><a href="#">Nav Link 2</a></li>
+          <li><a href="#">Nav Link 3</a></li>
+          <li><a href="#">Nav Link 4</a></li>
+          <li><a href="#">Nav Link 5</a></li>
+        </ul>
+
+
+        <label for="accordion3">Accordion Level 3</label>
+        <input type="checkbox" id="accordion3"/>
+
+        <ul>
+          <li><a href="#">Nav Link 1</a></li>
+          <li><a href="#">Nav Link 2</a></li>
+          <li><a href="#">Nav Link 3</a></li>
+          <li><a href="#">Nav Link 4</a></li>
+          <li><a href="#">Nav Link 5</a></li>
+        </ul>
+
+
+        <label for="accordion4">Accordion Level 4</label>
+        <input type="checkbox" id="accordion4"/>
+
+        <ul>
+          <li><a href="#">Nav Link 1</a></li>
+          <li><a href="#">Nav Link 2</a></li>
+          <li><a href="#">Nav Link 3</a></li>
+          <li><a href="#">Nav Link 4</a></li>
+          <li><a href="#">Nav Link 5</a></li>
+        </ul>
+
+      </nav>
+
+    </div>
 
     <hr>
 
