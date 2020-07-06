@@ -53,11 +53,17 @@ img {
 // Captioned Images
 
 figure {
-  background-color: $light-background;
+  background-color: $tertiary-color;
+
+  img {
+    border: .5rem solid $tertiary-color;
+    border-bottom: 0;
+  }
 
   figcaption {
     padding: 0 .5rem .3rem .5rem;
     font-size: .8em;
+    color: $light-text;
   }
 }
 

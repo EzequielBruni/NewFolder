@@ -517,12 +517,18 @@ img {
 }
 
 figure {
-  background-color: #fceeee;
+  background-color: #239aaa;
+}
+
+figure img {
+  border: 0.5rem solid #239aaa;
+  border-bottom: 0;
 }
 
 figure figcaption {
   padding: 0 .5rem .3rem .5rem;
   font-size: .8em;
+  color: white;
 }
 
 .in-content-text-bg {
