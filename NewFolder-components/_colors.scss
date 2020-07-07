@@ -17,3 +17,14 @@ $success-color: rgb(18, 194, 62);
 $mildwarning-color: rgb(255, 81, 0);
 
 $warning-color: rgba(255, 0, 0, 1);
+
+
+::-moz-selection { /* Code for Firefox */
+  color: $light-text;
+  background: $secondary-color;
+}
+
+::selection {
+  color: $light-text;
+  background: $secondary-color;
+}

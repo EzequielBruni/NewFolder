@@ -1,0 +1,67 @@
+/* FORM STYLES */
+
+.content form, form.content {
+  margin-bottom: 1.5rem;
+}
+
+input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+  display: block;
+  box-sizing: border-box;
+  font-family: $monospace-font;
+}
+
+form.content > *, .content form > * {
+  padding: 1rem;
+  display: block;
+  background: white;
+  border-top: 1px dotted $dark-background;
+  
+}
+
+.content > label, .content form > label, {
+
+  font-weight: bold;
+
+  input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+    width: 100%;
+    font-size: .8rem;
+    padding: .3rem;
+    background: white;
+    border: 1px solid $secondary-color;
+    box-shadow: inset 0px 0px .15em 0px rgba(0,0,0,0.3);
+    border-radius: .3rem;
+    margin-top: .5rem;
+  }
+
+  textarea {
+    height: 5rem;
+  }
+
+}
+
+.content fieldset, .content form fieldset {
+  border-top: 1px solid $tertiary-color;
+
+  legend {
+    font-weight: bold;
+    padding: 0rem .3rem 0rem .3rem;
+  }
+}
+
+
+input[type=checkbox], input[type=radio] {
+  margin-right: .3rem;
+
+  & + label {
+    font-family: $monospace-font;
+  }
+}
+
+input[type=submit] {
+  background-color: $primary-color;
+  border: 1px solid $secondary-color;
+  color: $light-text;
+  border-radius: .3rem;
+  font-size: 1rem;
+  padding: .3rem;
+}

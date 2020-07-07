@@ -30,11 +30,42 @@ div.accordiondemo {
   max-width: 350px;
 }
 
+@media (min-width: 400px) {
 
+  form#demoform {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: .5em .5em;
+  
+    > label, > fieldset {
+      min-width: 180px;
+    }
 
+    > fieldset, div {
+      grid-column-start: span 2;
+    }
 
-form {
-  > label {
-    display: block;
+    div {
+      text-align: right;
+    }
+
   }
+
 }
+
+
+@media (min-width: 600px) {
+
+  form#demoform {
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+    > fieldset, div {
+      grid-column-start: span 3;
+    }
+
+  }
+
+}
+
