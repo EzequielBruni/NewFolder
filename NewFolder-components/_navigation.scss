@@ -104,22 +104,29 @@ nav.dropdown {
     margin-left: 1.5rem;
   }
 
-  // Now let's make them visible again on :hover. Typemill uses the .folder class for this.
+  // Now let's make them visible again on with a checkbox
 
   ul {
     li.drop, li.folder {
 
-      > a {
-        &:after {
-          content: " ▼";
-        }
+      a {
+        display: inline-block;
       }
 
-      &:hover {
-        ul {
-          display: block;
-        }
+      input[type=checkbox] {
+        display: none;
       }
+
+      input[type=checkbox]:checked + ul {
+        display: block;
+      }
+
+      label {
+        color: $light-text;
+        background: $secondary-color;
+        padding: .5rem;
+      }
+
     }
   }
 }
@@ -143,7 +150,14 @@ nav.dropdown {
           }
         }
       }
-    }
+
+      &.nav-block {
+        ul li ul {
+          position: static;
+          padding-left: 1.5rem;
+        }
+      }
+    }  
 }
 
 

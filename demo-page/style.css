@@ -350,12 +350,22 @@ nav.dropdown ul li ul {
   margin-left: 1.5rem;
 }
 
-nav.dropdown ul li.drop > a:after, nav.dropdown ul li.folder > a:after {
-  content: " ▼";
+nav.dropdown ul li.drop a, nav.dropdown ul li.folder a {
+  display: inline-block;
 }
 
-nav.dropdown ul li.drop:hover ul, nav.dropdown ul li.folder:hover ul {
+nav.dropdown ul li.drop input[type=checkbox], nav.dropdown ul li.folder input[type=checkbox] {
+  display: none;
+}
+
+nav.dropdown ul li.drop input[type=checkbox]:checked + ul, nav.dropdown ul li.folder input[type=checkbox]:checked + ul {
   display: block;
+}
+
+nav.dropdown ul li.drop label, nav.dropdown ul li.folder label {
+  color: white;
+  background: #aa2323;
+  padding: .5rem;
 }
 
 @media (min-width: 700px) {
@@ -369,6 +379,10 @@ nav.dropdown ul li.drop:hover ul, nav.dropdown ul li.folder:hover ul {
   }
   nav.dropdown ul li ul li a {
     margin-top: 2px;
+  }
+  nav.dropdown.nav-block ul li ul {
+    position: static;
+    padding-left: 1.5rem;
   }
 }
 
