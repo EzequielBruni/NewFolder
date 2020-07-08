@@ -11,10 +11,10 @@ Todo:
     ✔ Centered Navigation Links @done(20-07-05 05:36)
     ✔ Hamburger Navigation @done(20-07-05 20:06)
     ✔ Accordion Navigation @done(20-07-05 20:06)
-  ☐ Forms
-    ☐ Text inputs
-    ☐ Message
-    ☐ Buttons
-    ☐ Checkboxes
-    ☐ Radio buttons
-  ☐ Refine mixins?
+  ✔ Forms @done(20-07-07 20:38)
+    ✔ Text inputs @done(20-07-07 20:38)
+    ✔ Message @done(20-07-07 20:38)
+    ✔ Buttons @done(20-07-07 20:38)
+    ✔ Checkboxes @done(20-07-07 20:38)
+    ✔ Radio buttons @done(20-07-07 20:38)
+  ☐ Re-configure repository

@@ -59,13 +59,11 @@ div.accordiondemo {
   form#demoform {
     grid-template-columns: repeat(3, 1fr);
 
-
-
     > fieldset, div {
       grid-column-start: span 3;
     }
 
   }
-
+  
 }
 
