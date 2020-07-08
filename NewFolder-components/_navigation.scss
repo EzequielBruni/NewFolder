@@ -104,7 +104,7 @@ nav.dropdown {
     margin-left: 1.5rem;
   }
 
-  // Now let's make them visible again on with a checkbox
+  // Now let's make them visible again with a checkbox
 
   ul {
     li.drop, li.folder {
@@ -113,6 +113,8 @@ nav.dropdown {
         display: inline-block;
       }
 
+      // Hide the actual checkbox. People will click the label to reveal the dropdown
+
       input[type=checkbox] {
         display: none;
       }
@@ -120,6 +122,8 @@ nav.dropdown {
       input[type=checkbox]:checked + ul {
         display: block;
       }
+
+      // Style the label so it looks real good
 
       label {
         color: $light-text;
