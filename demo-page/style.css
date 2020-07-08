@@ -276,14 +276,14 @@ nav a {
   text-decoration: none;
 }
 
-nav.nav-bar ul li a {
+nav.nav-bar ul li a, nav.nav-block ul li a {
   display: block;
   padding: .3rem;
   background: #fceeee;
   margin-bottom: 2px;
 }
 
-nav.nav-bar ul li a:hover {
+nav.nav-bar ul li a:hover, nav.nav-block ul li a:hover {
   background: #446c72;
   color: white;
 }
