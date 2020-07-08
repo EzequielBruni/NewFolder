@@ -17,6 +17,7 @@ nav.nav-bar, nav.nav-block {
       a {
         display: block;
         padding: .3rem;
+        height: 2.2rem;
         background: $light-background;
         margin-bottom: 2px;
 
@@ -31,7 +32,7 @@ nav.nav-bar, nav.nav-block {
 
 
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   nav.nav-bar {
     ul {
       display: flex;
@@ -39,14 +40,14 @@ nav.nav-bar, nav.nav-block {
       li{
         flex-grow: 1;
         flex-basis: 0;
+        margin-bottom: 0;
+        margin-right: .1rem;
   
         a {
           text-align: center;
-          margin-bottom: 0;
-          margin-right: .1rem;
         }
 
-        &:last-child a{
+        &:last-child{
           margin: 0;
         }
       }
@@ -63,11 +64,11 @@ nav.left, nav.right {
     li {
       flex-grow: 0;
       flex-basis: auto;
+      margin-bottom: .1rem;
+      margin-right: .1rem;
 
       a {
         text-align: center;
-        margin-bottom: .1rem;
-        margin-right: .1rem;
         padding: .3rem .5rem .3rem .5rem 
       }
     }
@@ -82,10 +83,8 @@ nav.right {
     justify-content: flex-end;
 
     li {
-      a { 
-        margin-right: 0;
+      margin-right: 0;
         margin-left: .1rem;
-      }
     }
   }
 }
@@ -102,6 +101,7 @@ nav.dropdown {
   ul li ul {
     display: none;
     margin-left: 1.5rem;
+    width: 100%;
   }
 
   // Now let's make them visible again with a checkbox
@@ -109,8 +109,11 @@ nav.dropdown {
   ul {
     li.drop, li.folder {
 
+      display: flex;
+      flex-wrap: wrap;
+
       a {
-        display: inline-block;
+        flex: 1;
       }
 
       // Hide the actual checkbox. People will click the label to reveal the dropdown
@@ -128,7 +131,10 @@ nav.dropdown {
       label {
         color: $light-text;
         background: $secondary-color;
-        padding: .5rem;
+        padding: .3rem;
+        text-align: center;
+        width: 2rem;
+        height: 2.2rem;
       }
 
     }
@@ -145,6 +151,7 @@ nav.dropdown {
 
           ul {
             margin: 0;
+            margin-top: 2.2rem;
             position: absolute;
             width: 100%;
 
@@ -217,10 +224,10 @@ nav.hamburger {
   input:checked ~ ul {display: block;}
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   nav.hamburger {
 
-    label {
+    > label {
       display: none;
     }
 
