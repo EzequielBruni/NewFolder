@@ -96,14 +96,18 @@ nav.right {
 
 // The Dropdown Navigation Bar
 
+// First, let's hide the child lists from view.
+
 nav.dropdown {
   ul li ul {
     display: none;
     margin-left: 1.5rem;
   }
 
+  // Now let's make them visible again on :hover. Typemill uses the .folder class for this.
+
   ul {
-    li.drop {
+    li.drop, li.folder {
 
       > a {
         &:after {
