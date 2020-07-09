@@ -91,6 +91,23 @@ nav.right {
 
 
 
+// Simple Vertical Navigation Block
+
+nav.nav-block {
+  width: 100%;
+
+  ul {
+
+    li {
+      width: 100%;
+
+      ul {
+        margin-top: .2rem;
+      }
+    }
+  }
+}
+
 
 
 // The Dropdown Navigation Bar
@@ -139,6 +156,14 @@ nav.dropdown {
 
     }
   }
+
+  // Some styles specifically for the vertical navigation block
+
+  &.nav-block {
+    ul li ul {
+      margin-top: 0rem;
+    }
+  }
 }
 
 
@@ -162,10 +187,13 @@ nav.dropdown {
         }
       }
 
+      // Some styles specifically for the vertical navigation block
+
       &.nav-block {
         ul li ul {
           position: static;
           padding-left: 1.5rem;
+          margin-top: -.1rem;
         }
       }
     }  

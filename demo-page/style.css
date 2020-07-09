@@ -346,6 +346,18 @@ nav.right ul li {
   margin-left: .1rem;
 }
 
+nav.nav-block {
+  width: 100%;
+}
+
+nav.nav-block ul li {
+  width: 100%;
+}
+
+nav.nav-block ul li ul {
+  margin-top: .2rem;
+}
+
 nav.dropdown ul li ul {
   display: none;
   margin-left: 1.5rem;
@@ -383,6 +395,10 @@ nav.dropdown ul li.drop label, nav.dropdown ul li.folder label {
   height: 2.2rem;
 }
 
+nav.dropdown.nav-block ul li ul {
+  margin-top: 0rem;
+}
+
 @media (min-width: 700px) {
   nav.dropdown ul li {
     position: relative;
@@ -399,6 +415,7 @@ nav.dropdown ul li.drop label, nav.dropdown ul li.folder label {
   nav.dropdown.nav-block ul li ul {
     position: static;
     padding-left: 1.5rem;
+    margin-top: -.1rem;
   }
 }
 
