@@ -458,11 +458,11 @@ nav.hamburger input:checked ~ ul {
   display: block;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 40rem) {
   nav.hamburger > label {
     display: none;
   }
-  nav.hamburger > ul {
+  nav.hamburger.nav-bar > ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

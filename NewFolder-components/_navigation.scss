@@ -251,18 +251,20 @@ nav.hamburger {
   input:checked ~ ul {display: block;}
 }
 
-@media (min-width: 700px) {
+@media (min-width: 40rem) {
   nav.hamburger {
 
     > label {
       display: none;
     }
 
+    &.nav-bar {
     > ul {
       display: flex;
       }
     }
   }
+}
 
 
 
