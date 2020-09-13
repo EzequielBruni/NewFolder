@@ -58,10 +58,11 @@ input[type=checkbox], input[type=radio] {
 }
 
 input[type=submit] {
-  background-color: $primary-color;
-  border: 1px solid $secondary-color;
+  background-color: $secondary-color;
+  border: 1px solid $dark-background;
   color: $light-text;
   border-radius: .3rem;
   font-size: 1rem;
   padding: .3rem;
+  font-family: $heading-font;
 }

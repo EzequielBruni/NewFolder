@@ -18,9 +18,23 @@ nav.nav-bar, nav.nav-block {
         display: block;
         padding: .3rem;
         height: 2.2rem;
-        background: $light-background;
+        
         margin-bottom: 2px;
 
+        &:hover {
+          
+        }
+      }
+    }
+  }
+}
+
+
+.nav-filled {
+  ul {
+    li {
+      a {
+        background: $light-background;
         &:hover {
           background: $dark-background;
           color: $light-text;
@@ -29,7 +43,6 @@ nav.nav-bar, nav.nav-block {
     }
   }
 }
-
 
 
 @media (min-width: 700px) {
@@ -48,7 +61,7 @@ nav.nav-bar, nav.nav-block {
         }
 
         &:last-child{
-          margin: 0;
+          margin-right: 0;
         }
       }
     }

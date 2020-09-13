@@ -3,8 +3,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url("https://www.fontify.me/wf/4082e37386d27ca11042496638664d37");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@600&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -57,15 +56,16 @@ table {
   border-spacing: 0;
 }
 
+/* GLOBAL COLOR VARIABLES */
 ::-moz-selection {
   /* Code for Firefox */
-  color: white;
-  background: #aa2323;
+  color: #fff6b7;
+  background: #79044c;
 }
 
 ::selection {
-  color: white;
-  background: #aa2323;
+  color: #fff6b7;
+  background: #79044c;
 }
 
 /* TYPOGRAPHY */
@@ -90,7 +90,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   line-height: 1.65;
-  color: #3a3a3a;
+  color: #2e4148;
 }
 
 p {
@@ -107,7 +107,7 @@ em {
 
 /* HEADINGS */
 h1, h2, h3, h4, h5, h6 {
-  font-family: font69674;
+  font-family: "Teko", sans-serif;
   font-weight: normal;
   margin: 1.05rem 0 1.05rem;
   line-height: 1.15;
@@ -215,7 +215,7 @@ sub {
   font-weight: bold;
   text-align: center;
   padding: .15em;
-  background-color: #fceeee;
+  background-color: #eff8f7;
 }
 
 .content ol ol li:last-child {
@@ -224,11 +224,11 @@ sub {
 
 /* LINKS */
 a {
-  color: #e64848;
+  color: #db088a;
 }
 
 a:hover {
-  color: #239aaa;
+  color: #a7dad4;
 }
 
 /* BLOCKQUOTE */
@@ -280,13 +280,16 @@ nav.nav-bar ul li a, nav.nav-block ul li a {
   display: block;
   padding: .3rem;
   height: 2.2rem;
-  background: #fceeee;
   margin-bottom: 2px;
 }
 
-nav.nav-bar ul li a:hover, nav.nav-block ul li a:hover {
-  background: #446c72;
-  color: white;
+.nav-filled ul li a {
+  background: #eff8f7;
+}
+
+.nav-filled ul li a:hover {
+  background: #2e4148;
+  color: #fff6b7;
 }
 
 @media (min-width: 700px) {
@@ -308,7 +311,7 @@ nav.nav-bar ul li a:hover, nav.nav-block ul li a:hover {
     text-align: center;
   }
   nav.nav-bar ul li:last-child {
-    margin: 0;
+    margin-right: 0;
   }
 }
 
@@ -383,8 +386,8 @@ nav.dropdown ul li.drop input[type=checkbox]:checked + ul, nav.dropdown ul li.fo
 }
 
 nav.dropdown ul li.drop label, nav.dropdown ul li.folder label {
-  color: white;
-  background: #aa2323;
+  color: #fff6b7;
+  background: #79044c;
   padding: .3rem;
   text-align: center;
   width: 2rem;
@@ -428,12 +431,12 @@ nav.centered ul {
 
 nav.centered ul li a {
   padding: 0rem .5rem 0rem .5rem;
-  border-right: 0.1rem solid #e64848;
+  border-right: 0.1rem solid #db088a;
   font-family: "IBM Plex Mono", monospace;
 }
 
 nav.centered ul li a:hover {
-  color: #239aaa;
+  color: #a7dad4;
 }
 
 nav.centered ul li:last-child a {
@@ -445,9 +448,9 @@ nav.hamburger input[type=checkbox] {
 }
 
 nav.hamburger label {
-  color: white;
+  color: #fff6b7;
   padding: .3rem .5rem .3rem .5rem;
-  background: #446c72;
+  background: #2e4148;
 }
 
 nav.hamburger > ul {
@@ -470,7 +473,7 @@ nav.hamburger input:checked ~ ul {
 }
 
 nav.breadcrumb {
-  outline: 0.1rem dashed #446c72;
+  outline: 0.1rem dashed #2e4148;
 }
 
 nav.breadcrumb ul {
@@ -492,7 +495,7 @@ nav.breadcrumb ul li a:after {
 }
 
 nav.breadcrumb ul li a:hover {
-  color: #239aaa;
+  color: #a7dad4;
 }
 
 nav.breadcrumb ul li:last-child a:after {
@@ -506,7 +509,7 @@ nav.accordion input[type=checkbox] {
 nav.accordion label {
   padding: .3rem .5rem .3rem .5rem;
   display: block;
-  border-top: 2px dashed #446c72;
+  border-top: 2px dashed #2e4148;
 }
 
 nav.accordion label:after {
@@ -524,13 +527,13 @@ nav.accordion input:checked + ul {
 nav.accordion ul li a {
   display: block;
   padding: .3rem .5rem .3rem .5rem;
-  border-top: 1px dashed #aa2323;
+  border-top: 1px dashed #79044c;
 }
 
 /* Preformatted Text */
 pre {
-  background: #446c72;
-  color: white;
+  background: #2e4148;
+  color: #fff6b7;
   font-size: .8rem;
   padding: 1rem;
   -webkit-box-shadow: inset 0px 0px 0.5em 0px rgba(0, 0, 0, 0.75);
@@ -547,7 +550,7 @@ pre code {
 }
 
 p code {
-  background: #fceeee;
+  background: #eff8f7;
   padding: .3em;
   font-size: .8em;
   -webkit-box-shadow: inset 0px 0px 0.2em 0px rgba(0, 0, 0, 0.3);
@@ -560,7 +563,7 @@ img {
 }
 
 .content img {
-  border-left: 0.5rem solid #239aaa;
+  border-left: 0.5rem solid #a7dad4;
 }
 
 @media (min-width: 1100px) {
@@ -570,23 +573,24 @@ img {
   }
 }
 
-figure {
-  background-color: #239aaa;
+.content figure {
+  background-color: #2e4148;
+  font-family: "IBM Plex Mono", monospace;
 }
 
-figure img {
-  border: 0.5rem solid #239aaa;
+.content figure img {
+  border: 0.5rem solid #2e4148;
   border-bottom: 0;
 }
 
-figure figcaption {
+.content figure figcaption {
   padding: 0 .5rem .3rem .5rem;
   font-size: .8em;
-  color: white;
+  color: #fff6b7;
 }
 
 .in-content-text-bg {
-  border-left: 0.5rem solid #239aaa;
+  border-left: 0.5rem solid #a7dad4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,14 +598,14 @@ figure figcaption {
 }
 
 .in-content-text-bg img {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: brightness(60%) grayscale(50%);
+          filter: brightness(60%) grayscale(50%);
   border: 0;
 }
 
 .in-content-text-bg div {
   width: 70%;
-  color: white;
+  color: #fff6b7;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -610,12 +614,16 @@ figure figcaption {
   text-shadow: 2px 2px 4px black;
 }
 
+.in-content-text-bg div p {
+  font-family: "IBM Plex Mono", monospace;
+}
+
 /*  */
 /* ALERT BOXES */
 .alert {
-  background-color: #fceeee;
+  background-color: #eff8f7;
   padding: 1rem 1rem 1rem 2.5rem;
-  border-left: 0.3rem solid #239aaa;
+  border-left: 0.3rem solid #a7dad4;
   background-repeat: no-repeat;
   background-position: -1rem -1rem;
   background-size: 5rem;
@@ -630,18 +638,22 @@ figure figcaption {
   font-size: .8em;
 }
 
+.alert a:hover {
+  color: #2e4148;
+}
+
 .alert code {
-  background: #446c72;
-  color: white;
+  background: #2e4148;
+  color: #fff6b7;
 }
 
 .alert.generalinfo {
-  border-color: #239aaa;
+  border-color: #a7dad4;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='36' height='36'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15zm-3.847-8.699a2 2 0 1 0 2.646 2.646 4 4 0 1 1-2.646-2.646z' fill='rgba(0,0,0,1)'/%3E%3C/svg%3E");
 }
 
 .alert.generalinfo h3, .alert.generalinfo h4, .alert.generalinfo h5 {
-  color: #239aaa;
+  color: #a7dad4;
 }
 
 .alert.mild {
@@ -687,7 +699,7 @@ form.content > *, .content form > * {
   padding: 1rem;
   display: block;
   background: white;
-  border-top: 1px dotted #446c72;
+  border-top: 1px dotted #2e4148;
 }
 
 .content > label, .content form > label {
@@ -699,7 +711,7 @@ form.content > *, .content form > * {
   font-size: .8rem;
   padding: .3rem;
   background: white;
-  border: 1px solid #aa2323;
+  border: 1px solid #79044c;
   -webkit-box-shadow: inset 0px 0px 0.15em 0px rgba(0, 0, 0, 0.3);
           box-shadow: inset 0px 0px 0.15em 0px rgba(0, 0, 0, 0.3);
   border-radius: .3rem;
@@ -711,7 +723,7 @@ form.content > *, .content form > * {
 }
 
 .content fieldset, .content form fieldset {
-  border-top: 1px solid #239aaa;
+  border-top: 1px solid #a7dad4;
 }
 
 .content fieldset legend, .content form fieldset legend {
@@ -728,19 +740,20 @@ input[type=checkbox] + label, input[type=radio] + label {
 }
 
 input[type=submit] {
-  background-color: #e64848;
-  border: 1px solid #aa2323;
-  color: white;
+  background-color: #79044c;
+  border: 1px solid #2e4148;
+  color: #fff6b7;
   border-radius: .3rem;
   font-size: 1rem;
   padding: .3rem;
+  font-family: "Teko", sans-serif;
 }
 
 header {
   padding: 2rem 0 2rem 0;
   text-align: center;
-  background: #446c72;
-  color: white;
+  background: #2e4148;
+  color: #fff6b7;
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -752,35 +765,35 @@ footer, section {
 }
 
 footer {
-  background: #fceeee;
+  background: #eff8f7;
   padding: 1.65rem;
 }
 
 div.primarycolor, div.secondarycolor, div.tertiarycolor, div.lightbackground, div.darkbackground {
   padding: 1rem;
   margin-top: .5rem;
-  color: white;
+  color: #fff6b7;
 }
 
 div.primarycolor {
-  background: #e64848;
+  background: #db088a;
 }
 
 div.secondarycolor {
-  background: #aa2323;
+  background: #79044c;
 }
 
 div.tertiarycolor {
-  background: #239aaa;
+  background: #a7dad4;
 }
 
 div.lightbackground {
-  background: #fceeee;
-  color: #3a3a3a;
+  background: #eff8f7;
+  color: #2e4148;
 }
 
 div.darkbackground {
-  background: #446c72;
+  background: #2e4148;
 }
 
 div.accordiondemo {

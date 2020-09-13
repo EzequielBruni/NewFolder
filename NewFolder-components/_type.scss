@@ -4,13 +4,10 @@
 
 // I use Google Fonts & Fontify for simplicity's sake. I may embed fonts manually in the future, if I see performance problems.
 
-// I use the Rubik family for body text, and IBM Plex Mono for prefortmatted text, code examples, and blockquotes.
+// I use the Rubik family for body text, and IBM Plex Mono for prefortmatted text, code examples, and blockquotes. Teko gets used for Headings.
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@600&display=swap');
 
-// This font is TW Cen MT Condensed Bold, and is used for headings.
-
-@import url('https://www.fontify.me/wf/4082e37386d27ca11042496638664d37');
 
 
 /* FONT VARIABLES */
@@ -19,7 +16,7 @@
 
   $body-font: 'Rubik', sans-serif;
 
-  $heading-font: font69674;
+  $heading-font: 'Teko', sans-serif;
 
   $monospace-font: 'IBM Plex Mono', monospace;
 
@@ -133,6 +130,7 @@
   .content ul {
     list-style: circle;
     padding-left: 1.5em;
+
   }
 
   // More complex styling for ordered lists, so I can style the numbers however I like. Based on a snippet by Roger Johansson. - https://www.456bereastreet.com

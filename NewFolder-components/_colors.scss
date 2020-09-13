@@ -1,18 +1,18 @@
 /* GLOBAL COLOR VARIABLES */
 
-$primary-color: rgba(230, 72, 72, 1) !default;
+$primary-color: rgb(219,8,138) !default;
 
-$secondary-color: rgba(170, 35, 35, 1) !default;
+$secondary-color: darken($primary-color, 20%) !default;
 
-$tertiary-color: rgba(35, 154, 170, 1) !default;
+$tertiary-color: rgb(167,218,212) !default;
 
-$light-background: rgba(252, 238, 238, 1) !default;
+$light-background: lighten($tertiary-color, 20%) !default;
 
-$dark-background: rgba(68, 108, 114, 1) !default;
+$dark-background: rgb(46,65,72) !default;
 
-$dark-text: rgba(58, 58, 58, 1) !default;
+$dark-text: rgb(46,65,72) !default;
 
-$light-text: rgba(255, 255, 255, 1)  !default;
+$light-text: rgb(255,246,183)  !default;
 
 $success-color: rgb(18, 194, 62) !default;
 

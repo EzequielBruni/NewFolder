@@ -90,8 +90,15 @@
     <p>Ordered lists use more advanced styling, to make it easier to change how the numbers themselves are styled. I may apply a similar technique to unordered lists in the near-ish future.</p>
 
     <ol>
-      <li>Item One</li>
-      <li>Item Two</li>
+      <li>Item One
+        <br>
+        More text
+      </li>
+      <li>
+        <p>
+          List item with a paragraph.
+        </p>
+      </li>
       <li>Item Three</li>
     </ol>
 
@@ -165,7 +172,7 @@
 
       <div class="img-text">
         <h4>Text on an image background</h4>
-        <p>This is text you <em>really</em> want people to notice.</p>
+        <p>This is text you <em>really</em> want people to notice. The image is darkened by 40% and desaturated by 50% with CSS.</p>
       </div>
     </div>
 
@@ -254,7 +261,7 @@ This is preformatted text!
 
     <h3>Simple Navigation Bars</h3>
 
-    <nav class="nav-bar simple">
+    <nav class="nav-bar nav-filled">
       <ul>
         <li><a href="#">Nav Link 1</a></li>
         <li><a href="#">Nav Link 2</a></li>
@@ -288,7 +295,7 @@ This is preformatted text!
 
     <h3>Simple Vertical Navigation Block</h3>
 
-    <nav class="nav-block dropdown">
+    <nav class="nav-block dropdown nav-filled">
       <ul>
         <li><a href="#">Nav Link 1</a></li>
         <li><a href="#">Nav Link 2</a></li>
@@ -313,7 +320,7 @@ This is preformatted text!
 
     <h3>Dropdown Navigation Bar</h3>
 
-    <nav class="nav-bar dropdown">
+    <nav class="nav-bar dropdown nav-filled">
       <ul>
         <li><a href="#">Nav Link 1</a></li>
         <li><a href="#">Nav Link 2</a></li>
@@ -359,7 +366,7 @@ This is preformatted text!
 
     <p>Resize the window to see the hamburger button in action.</p>
 
-      <nav class="nav-bar dropdown hamburger">
+      <nav class="nav-bar dropdown hamburger nav-filled">
         <label for="hamburger">&#9776;</label>
         <input type="checkbox" id="hamburger"/>
 
