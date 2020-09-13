@@ -131,6 +131,11 @@
     list-style: circle;
     padding-left: 1.5em;
 
+    li {
+      p:last-child {
+        margin: 0 !important;
+      }
+    }
   }
 
   // More complex styling for ordered lists, so I can style the numbers however I like. Based on a snippet by Roger Johansson. - https://www.456bereastreet.com
@@ -148,6 +153,10 @@
 
       list-style:none; /* Disable the normal item numbering */
 
+      p:last-child {
+        margin: 0 !important;
+      }
+
     }
     ol > li:before {
       content:counter(li); /* Use the counter as content */
@@ -162,6 +171,7 @@
       padding: .15em; 
 
       background-color: $light-background;
+      font-family: $monospace-font;
     }
 
     ol ol li:last-child {margin-bottom:0;}
