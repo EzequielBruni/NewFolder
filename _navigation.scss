@@ -45,7 +45,7 @@ nav.nav-bar, nav.nav-block {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   nav.nav-bar {
     ul {
       display: flex;
@@ -179,7 +179,7 @@ nav.dropdown {
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   nav.dropdown {
 
     ul {
@@ -264,7 +264,7 @@ nav.hamburger {
   input:checked ~ ul {display: block;}
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 60rem) {
   nav.hamburger {
 
     > label {
