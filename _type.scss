@@ -22,8 +22,13 @@
 
 /* TYPE SCALING */
   
+@media (max-width: 800px) {
+  :root {
+    font-size: 16px;
+  }
+}
 
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
     :root {
       font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
       min-height: 0vw;
@@ -76,7 +81,7 @@
   
   h5 {font-size: 1.2em;}
   
-  small, .text_small {font-size: 0.833em;}
+  small, .text_small {font-size: 0.9em;}
 
 /* GENERAL ALIGNMENTS */
 
