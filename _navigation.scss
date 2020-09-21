@@ -20,10 +20,6 @@ nav.nav-bar, nav.nav-block {
         height: 2.2rem;
         
         margin-bottom: 2px;
-
-        // &:hover {
-          
-        //}
       }
     }
   }
@@ -35,9 +31,10 @@ nav.nav-bar, nav.nav-block {
     li {
       a {
         background: $light-background;
+        color: $primary-color;
+
         &:hover {
-          background: $dark-background;
-          color: $light-text;
+          background: darken($tertiary-color, 5%);
         }
       }
     }
@@ -164,6 +161,10 @@ nav.dropdown {
         text-align: center;
         width: 2rem;
         height: 2.2rem;
+
+        &:hover {
+          background: $dark-background;
+        }
       }
 
     }
