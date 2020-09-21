@@ -22,18 +22,18 @@
 
 /* TYPE SCALING */
   
-@media (max-width: 800px) {
   :root {
     font-size: 16px;
   }
-}
-
+/*
   @media (min-width: 800px) {
     :root {
       font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
       min-height: 0vw;
     }
   }
+
+*/
   @media (min-width: 1920px) {
     :root {
       font-size: 20px;
