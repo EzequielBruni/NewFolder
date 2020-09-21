@@ -22,20 +22,16 @@
 
 /* TYPE SCALING */
   
-  :root {
+@media screen and (max-width: 50rem) {
+  :root, body {
     font-size: 16px;
   }
-/*
-  @media (min-width: 800px) {
-    :root {
-      font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
-      min-height: 0vw;
-    }
-  }
 
-*/
-  @media (min-width: 1920px) {
-    :root {
+}
+
+
+  @media screen and (min-width: 50rem) {
+    :root, body {
       font-size: 20px;
     }
   }
