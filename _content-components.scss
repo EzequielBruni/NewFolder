@@ -70,38 +70,6 @@ img {
 
 
 
-// In-content Text Background Images
-
-.in-content-text-bg {
-  border-left: .5rem solid $tertiary-color;
-  display: flex;
-  position: relative;
-
-  img {
-    filter: brightness(60%) grayscale(50%);
-    border: 0;
-  }
-
-  div {
-    width: 70%;
-    color: $light-text;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-
-    p {
-      font-family: $monospace-font;
-    }
-  }
-} 
-
-
-
-/*  */
-
-
 
 
 /* ALERT BOXES */

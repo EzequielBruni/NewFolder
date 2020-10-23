@@ -22,18 +22,15 @@
 
 /* TYPE SCALING */
   
-  :root {
-    font-size: 16px;
-  }
-/*
-  @media (min-width: 800px) {
-    :root {
-      font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
-      min-height: 0vw;
-    }
-  }
 
-*/
+
+:root {
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
+  min-height: 0vw;
+}
+
+
+
   @media (min-width: 1920px) {
     :root {
       font-size: 20px;
@@ -188,7 +185,7 @@
     color: $primary-color;
 
     &:hover {
-      color: $tertiary-color;
+      color: $secondary-color;
     }
   }
 
