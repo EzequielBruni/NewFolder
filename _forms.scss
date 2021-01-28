@@ -1,8 +1,21 @@
 /* FORM STYLES */
 
+// Trigger form styles only in the content
+// This makes forms outside of the content, such as search forms, easier to style
+
 .content form, form.content {
   margin-bottom: 1.5rem;
 }
+
+// Turn every immediatechild element of the form into its own block-level element
+
+form.content > *, .content form > * {
+  padding: 1rem;
+  display: block;
+  border-top: 1px solid $tertiary-color;
+}
+
+// Basic styles for the most common form elements
 
 input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
   display: block;
@@ -10,15 +23,7 @@ input[type=text], input[type=number], input[type=password], input[type=file], te
   font-family: $monospace-font;
 }
 
-form.content > *, .content form > * {
-  padding: 1rem;
-  display: block;
-  background: white;
-  border-top: 1px dotted $dark-background;
-  
-}
-
-.content > label, .content form > label, {
+.content > label, .content form > label {
 
   font-weight: bold;
 
@@ -39,15 +44,16 @@ form.content > *, .content form > * {
 
 }
 
+// Styles for fieldsets, checkboxes, and radio boxes
+
 .content fieldset, .content form fieldset {
   border-top: 1px solid $tertiary-color;
 
   legend {
     font-weight: bold;
-    padding: 0rem .3rem 0rem .3rem;
+    padding: 0rem .5rem 0rem .5rem;
   }
 }
-
 
 input[type=checkbox], input[type=radio] {
   margin-right: .3rem;
@@ -57,12 +63,14 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
-input[type=submit] {
+// Styles for submit and button elements
+
+input[type=submit], button {
   background-color: $secondary-color;
   border: 1px solid $dark-background;
   color: $light-text;
   border-radius: .3rem;
-  font-size: 1rem;
-  padding: .3rem;
-  font-family: $heading-font;
+  font-size: 1em;
+  padding: .5em;
+  font-family: $monospace-font;
 }

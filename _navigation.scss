@@ -25,22 +25,24 @@ nav.nav-bar, nav.nav-block {
   }
 }
 
+  // Styles to add background colors into navigation bars. Used on dropdowns, accordions, and hamburger menus, among others
 
-.nav-filled {
-  ul {
-    li {
-      a {
-        background: $light-background;
-        color: $primary-color;
+  .nav-filled {
+    ul {
+      li {
+        a {
+          background: $light-background;
+          color: $primary-color;
 
-        &:hover {
-          background: darken($tertiary-color, 5%);
+          &:hover {
+            background: darken($tertiary-color, 5%);
+          }
         }
       }
     }
   }
-}
 
+// The basic styles for nav bars on tablet and desktop-sized screens
 
 @media (min-width: 50rem) {
   nav.nav-bar {
@@ -65,6 +67,8 @@ nav.nav-bar, nav.nav-block {
   }
 }
 
+// Styles for aligning navigation links to the left or right
+
 nav.left, nav.right {
 
   ul {
@@ -86,7 +90,6 @@ nav.left, nav.right {
 }
 
 
-
 nav.right {
     
   ul {
@@ -100,8 +103,8 @@ nav.right {
 }
 
 
-
 // Simple Vertical Navigation Block
+// Just add this to any nav bar to make it vertical.
 
 nav.nav-block {
 
@@ -118,10 +121,11 @@ nav.nav-block {
 }
 
 
-
 // The Dropdown Navigation Bar
 
-// First, let's hide the child lists from view.
+// This works with no JS, using a checkbox to implement the show/hide on click functionality 
+
+// First, let's hide the child lists from view
 
 nav.dropdown {
   ul li ul {
@@ -142,7 +146,7 @@ nav.dropdown {
         flex: 1;
       }
 
-      // Hide the actual checkbox. People will click the label to reveal the dropdown
+      // Hide the actual checkbox - People will click the label to reveal the dropdown
 
       input[type=checkbox] {
         display: none;
@@ -170,7 +174,7 @@ nav.dropdown {
     }
   }
 
-  // Some styles specifically for the vertical navigation block
+  // Some styles specifically for the using the vertical navigation block with dropdowns
 
   &.nav-block {
     ul li ul {
@@ -179,6 +183,7 @@ nav.dropdown {
   }
 }
 
+// And now, the desktop / tablet version
 
 @media (min-width: 50rem) {
   nav.dropdown {
@@ -215,6 +220,8 @@ nav.dropdown {
 
 // The Centered Navigation Bar
 
+// Simply put, this aligns all the links to the middle
+
 nav.centered {
   ul {
     display: flex;
@@ -245,6 +252,8 @@ nav.centered {
 
 
 // Hamburger Navigation
+
+// Works on the same principle as the drop-down menu, requires a checkbox
 
 nav.hamburger {
 
@@ -318,6 +327,8 @@ nav.breadcrumb {
 
 
 // Accordion Navigation
+
+// Drop-down and hamburger menus on steroids
 
 nav.accordion {
 

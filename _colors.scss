@@ -2,7 +2,7 @@
 
 $primary-color: rgb(219,8,138) !default;
 
-$secondary-color: darken($primary-color, 20%) !default;
+$secondary-color: desaturate(darken($primary-color, 20%), 20%) !default;
 
 $tertiary-color: rgb(167,218,212) !default;
 
@@ -12,7 +12,7 @@ $dark-background: rgb(46,65,72) !default;
 
 $dark-text: rgb(46,65,72) !default;
 
-$light-text: rgb(255,246,183)  !default;
+$light-text: rgb(255,255,255)  !default;
 
 $success-color: rgb(18, 194, 62) !default;
 

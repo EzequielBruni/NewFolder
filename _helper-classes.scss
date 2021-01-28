@@ -1,7 +1,7 @@
 
 /* FLOATS */
 
-// Basic floats
+// Basic floats move things to the left or right in a content area
 
 @media (min-width: 60rem) {
 
@@ -26,15 +26,15 @@
 }
 
 
-// Out-of-bounds floats
+// Out-of-bounds floats move things a little bit farther to the left or right, out of bounds
 
 @media (min-width: 1100px) {
   .content .float-left.float-hard {
-    margin-left: -1.5rem;
+    margin-left: -3rem;
   }
 
   .content .float-right.float-hard {
-    margin-right: -1.5rem;
+    margin-right: -3rem;
   }
 }
 

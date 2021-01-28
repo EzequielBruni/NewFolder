@@ -21,15 +21,13 @@
   $monospace-font: 'IBM Plex Mono', monospace;
 
 /* TYPE SCALING */
-  
 
+// This setup allows typefaces to change size as you make the screen wider or smaller.
 
 :root {
   font-size: calc(1rem + ((1vw - 7.68px) * 0.3472));
   min-height: 0vw;
 }
-
-
 
   @media (min-width: 1920px) {
     :root {
@@ -81,7 +79,6 @@
   small, .text_small {font-size: 0.9em;}
 
 /* GENERAL ALIGNMENTS */
-
 
   p,
   ul,
