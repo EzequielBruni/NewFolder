@@ -17,4 +17,3 @@ A private design system that you're free to use, if you like it. It was designed
 ## Things I'm still working on:
 
 * Integration with CMSs like [Typemill](https://typemill.net), and [Bludit](https://www.bludit.com). Again, this is for my own personal benefit, mostly.
-* Better comments in the code, and more of them.
