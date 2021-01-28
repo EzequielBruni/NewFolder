@@ -2,7 +2,7 @@
 
 A private design system that you're free to use, if you like it. It was designed for my own personal projects. It's based on SASS, mostly, and it's meant to be easily dropped in, and integrated with any CMS you need.
 
-You can see it live on [my personal website](https://ezequiel.works).
+You can see it live on [my personal website](https://ezequiel.works), and see all the styles at work in [the demo respository](https://github.com/EzequielBruni/NewFolder-Demo).
 
 ## Features
 
