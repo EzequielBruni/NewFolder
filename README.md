@@ -13,7 +13,7 @@ You can see it live on [my personal website](https://ezequiel.works), and see al
 * Various in-content image styles
 * Form styles (still somewhat in-progress)
 * Alert boxes for information, warnings, and success alerts
-* Navigation patterns for nav bars, dropdown navigation, hamburger navigation, accordion navigation, breadcrumb navigation, and more.
+* Navigation patterns for in-content accordions and breadcrumbs.
 
 
 ## Things I'm still working on:
