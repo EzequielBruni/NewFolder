@@ -1,33 +1,69 @@
+
 /* GLOBAL COLOR VARIABLES */
+:root {
 
-$primary-color: rgb(219,8,138) !default;
+    --primary-color: rgb(219,8,138);
 
-$secondary-color: desaturate(darken($primary-color, 20%), 20%) !default;
+    --secondary-color: rgb(117, 19, 79);
 
-$tertiary-color: rgb(167,218,212) !default;
+    --tertiary-color: rgb(167,218,212);
 
-$light-background: lighten($tertiary-color, 20%) !default;
+    --background-color-1: rgb(229, 247, 244);
 
-$dark-background: rgb(46,65,72) !default;
+    --background-color-2: rgb(46,65,72);
 
-$dark-text: rgb(46,65,72) !default;
+    --text-color-1: rgb(46,65,72);
 
-$light-text: rgb(255,255,255)  !default;
+    --text-color-2: rgb(255,255,255);
 
-$success-color: rgb(18, 194, 62) !default;
+    --success-color: rgb(18, 194, 62);
 
-$mildwarning-color: rgb(255, 81, 0) !default;
+    --mildwarning-color: rgb(255, 81, 0);
 
-$warning-color: rgba(255, 0, 0, 1) !default;
+    --warning-color: rgba(255, 0, 0, 1);
+}
+
+    // The colors for dark-mode users
+    @media (prefers-color-scheme: dark) {
+        :root {
+
+            --primary-color: rgb(245, 84, 183);
+
+            --secondary-color: rgb(150, 22, 101);
+        
+            --tertiary-color: rgb(167,218,212);
+        
+            --background-color-1: rgb(37, 51, 48);
+        
+            --background-color-2: rgb(46,65,72);
+
+            --body-background-dark: rgb(15, 18, 19);
+        
+            --text-color-1: rgb(255,255,255);
+        
+            --text-color-2: rgb(172, 202, 197);
+        
+            --success-color: rgb(18, 194, 62);
+        
+            --mildwarning-color: rgb(255, 81, 0);
+        
+            --warning-color: rgb(255, 45, 45);
+        }
+
+        body {
+            background: var(--body-background-dark);
+        }
+
+    }
 
 // Selection colors
 
 ::-moz-selection { /* Code for Firefox */
-  color: $light-text;
-  background: $secondary-color;
+  color: var(--text-color-2);
+  background: var(--secondary-color);
 }
 
 ::selection {
-  color: $light-text;
-  background: $secondary-color;
+  color: var(--text-color-2);
+  background: var(--secondary-color);
 }

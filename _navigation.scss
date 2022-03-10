@@ -1,6 +1,5 @@
 /* NAVIGATION PATTERNS */
 
-
 // The Simple Navigation Bar
 
 nav {
@@ -13,7 +12,7 @@ nav {
 // Breadcrumb Navigation
 
 nav.breadcrumb {
-  outline: .1rem dashed $dark-background;
+  outline: .1rem dashed var(--background-color-2);
 
   ul {
     display: flex;
@@ -24,14 +23,14 @@ nav.breadcrumb {
 
       a {
         padding: 0rem .5rem 0rem .5rem;
-        font-family: $monospace-font;
+        font-family: var(--monospace-font);
       
         &:after {
           content: " ▶";
         }
 
         &:hover {
-          color: $tertiary-color;
+          color: var(--tertiary-color);
         }
       }
 
@@ -58,7 +57,7 @@ nav.accordion {
   label {
     padding: .3rem .5rem .3rem .5rem;
     display: block;
-    border-top: 2px dashed $dark-background;
+    border-top: 2px dashed var(--background-color-2);
 
     &:after {
       content: " ▼";
@@ -76,7 +75,7 @@ nav.accordion {
       a {
         display: block;
         padding: .3rem .5rem .3rem .5rem;
-        border-top: 1px dashed $secondary-color;
+        border-top: 1px dashed var(--secondary-color);
       }
     }
   }

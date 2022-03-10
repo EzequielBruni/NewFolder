@@ -1,31 +1,38 @@
-/* Preformatted Text */
-
-pre {
-  background: $dark-background;
-  color: $light-text;
-  font-size: .9rem;
-  padding: 1rem;
-
-  box-shadow: inset 0px 0px .5em 0px rgba(0,0,0,0.75);
-}
 
 
 /* Code Snippets */
 
 code {
-  font-family: $monospace-font;
+    font-family: var(--monospace-font);
+    background: var(--background-color-1);
+    padding: .3em;
+    font-size: .9em;
+    box-shadow: inset 0px 0px .2em 0px rgba(0,0,0,0.3);
+    border: 1px solid var(--tertiary-color);
 }
 
-pre code {
-  display: block;
+    p code {
+        font-size: var(--small-text);
+    }
+
+/* Preformatted Text and Code */
+
+pre {
+  background: var(--background-color-2);
+  color: var(--text-color-2);
+  font-size: .9rem;
+  padding: 1rem;
+  box-shadow: inset 0px 0px .5em 0px rgba(0,0,0,0.75);
+
+  code {
+      display: block;
+      background: transparent;
+      border: 0px;
+      box-shadow: none;
+  }
 }
 
-p code {
-  background: $light-background;
-  padding: .3em;
-  font-size: .9em;
-  box-shadow: inset 0px 0px .2em 0px rgba(0,0,0,0.3);
-}
+
 
 
 /* IMAGES */
@@ -35,7 +42,7 @@ img {
 }
 
 .content img {
-  border-left: .5rem solid $tertiary-color;
+  border-left: .5rem solid var(--tertiary-color);
 }
 
 // Focused Images are designed to make pictures stand out a little more
@@ -53,22 +60,20 @@ img {
 // Captioned Images
 
 .content figure {
-  background-color: $dark-background;
-  font-family: $monospace-font;
+  background-color: var(--background-color-2);
+  font-family: var(--monospace-font);
 
   img {
-    border: .5rem solid $dark-background;
+    border: .5rem solid var(--background-color-2);
     border-bottom: 0;
   }
 
   figcaption {
     padding: 0 .5rem .3rem .5rem;
     font-size: .9em;
-    color: $light-text;
+    color: var(--text-color-2);
   }
 }
-
-
 
 
 
@@ -77,9 +82,9 @@ img {
 // Some general styles for alert boxes.
 
 .alert {
-  background-color: $light-background;
+  background-color: var(--background-color-1);
   padding: 1rem 1rem 1rem 2.5rem;
-  border-left: .3rem solid $tertiary-color;
+  border-left: .3rem solid var(--tertiary-color);
 
   background-repeat: no-repeat;
   background-position: -1rem -1rem;
@@ -95,48 +100,68 @@ img {
   }
 
   a:hover {
-    color: $dark-background;
+    color: var(--background-color-2);
   }
 
   code {
-    background: $dark-background;
-    color: $light-text;
+    background: var(--background-color-2);
+    color: var(--text-color-2);
   }
 
   &.generalinfo {
-    border-color: $tertiary-color;
+    border-color: var(--tertiary-color);
     @include icon-search-eye;
 
     h3, h4, h5 {
-      color: $tertiary-color;
+      color: var(--text-color-1);
     }
 
   }
 
   &.mild {
-    border-color: $mildwarning-color;
+    border-color: var(--mildwarning-color);
     @include icon-warning-outline;
 
     h3, h4, h5 {
-      color: $mildwarning-color;
+      color: var(--mildwarning-color);
     }
   }
 
   &.success {
-    border-color: $success-color;
+    border-color: var(--success-color);
     @include icon-checkmark-filled;
 
     h3, h4, h5 {
-      color: $success-color;
+      color: var(--success-color);
     }
   }
 
   &.warning {
-    border-color: $warning-color;
+    border-color: var(--warning-color);
     @include icon-warning-filled;
 
     h3, h4, h5 {
-      color: $warning-color;
+      color: var(--warning-color);
     }
   } 
 }
+
+    @media (prefers-color-scheme: dark) {
+        .alert {
+            &.generalinfo {
+                @include icon-search-eye-darkmode;
+            }
+            
+            &.mild {
+                @include icon-warning-outline-darkmode;
+            }
+            
+            &.success {
+                @include icon-checkmark-filled-darkmode;
+            }
+            
+            &.warning {
+                @include icon-warning-filled-darkmode;
+            } 
+        }
+    }
