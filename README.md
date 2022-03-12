@@ -7,15 +7,16 @@ You can see it live on [my personal website](https://ezequiel.works), and see al
 ## Features
 
 * A pseudo-flat aesthetic
-* SASS variables for changing your color scheme quickly
+* CSS variables for changing your color scheme quickly
+    * **New!** NewFolder now includes a dark mode thanks to `@media (prefers-color-scheme: dark) {}`.
 * Layout-agnostic. The navigation patterns mostly use Flexbox, but you can use CSS Grid for the overall page layout. God knows I will. The rest is up to you.
-* Readable typographical Styles
+* Readable typographical styles with type scaling
 * Various in-content image styles
 * Form styles (still somewhat in-progress)
-* Alert boxes for information, warnings, and success alerts
+* Alert/admonition boxes for information, warnings, and success alerts
 * Navigation patterns for in-content accordions and breadcrumbs.
-
 
 ## Things I'm still working on:
 
+* A full conversion to pure CSS. This will take some time, as CSS has some catching up to do, compared to SASS.
 * Integration with CMSs like [Typemill](https://typemill.net), and [Bludit](https://www.bludit.com). Again, this is for my own personal benefit, mostly.
