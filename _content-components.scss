@@ -29,20 +29,60 @@ pre {
       background: transparent;
       border: 0px;
       box-shadow: none;
+      white-space: pre-wrap;
   }
 }
 
+/* Description lists */
 
+dl {
+  
 
+    dt {
+        font-weight: bold;
+        padding-left: .5rem;
+        border-left: .3rem solid var(--tertiary-color); 
+    }
+
+    dd {
+        border-left: .3rem solid var(--tertiary-color); 
+        padding-left: 2em;
+        font-family: var(--monospace-font);
+        font-size: var(--small-text);
+        margin-bottom: .5em;
+    }
+}
+
+/* BLOCKQUOTE */
+
+blockquote {
+    margin-left: 3em;
+    font-family: var(--monospace-font);
+    font-size: 1.1em;
+
+        p {
+        margin: 0px;
+
+            &::before {
+                content: "“ ";
+            }
+
+            &:last-of-type:after {
+                content: " ”";
+                text-align: right;
+            }
+        }
+    }
 
 /* IMAGES */
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .content img {
-  border-left: .5rem solid var(--tertiary-color);
+  border-left: .5em solid var(--tertiary-color);
+  padding-left: .25em;
 }
 
 // Focused Images are designed to make pictures stand out a little more
@@ -60,35 +100,54 @@ img {
 // Captioned Images
 
 .content figure {
-  background-color: var(--background-color-2);
   font-family: var(--monospace-font);
+  padding-bottom: .5em;
 
-  img {
-    border: .5rem solid var(--background-color-2);
-    border-bottom: 0;
-  }
-
-  figcaption {
-    padding: 0 .5rem .3rem .5rem;
-    font-size: .9em;
-    color: var(--text-color-2);
-  }
+    figcaption {
+        padding: 0 .5rem 0rem .75rem;
+        font-size: .9em;
+    }
 }
 
+
+// Tables 
+
+table {
+    width: 100%;
+
+    tr {
+        width: 100%;
+    }
+
+    th, td {
+        padding: .3rem .5rem;
+    }
+
+    th {
+        background: var(--background-color-1);
+        text-align: left;
+        font-weight: bold;
+    }
+
+    td {
+        font-family: var(--monospace-font);
+        font-size: var(--small-text);
+    }
+}
 
 
 /* ALERT BOXES */
 
 // Some general styles for alert boxes.
 
-.alert {
+.alert, .notice1, .notice2, .notice3, .notice4 {
   background-color: var(--background-color-1);
   padding: 1rem 1rem 1rem 2.5rem;
   border-left: .3rem solid var(--tertiary-color);
-
   background-repeat: no-repeat;
   background-position: -1rem -1rem;
   background-size: 5rem;
+  margin-bottom: .5em;
   background-blend-mode: overlay;
 
   h2, h3, h4, h5, p {
@@ -108,17 +167,19 @@ img {
     color: var(--text-color-2);
   }
 
-  &.generalinfo {
-    border-color: var(--tertiary-color);
-    @include icon-search-eye;
+}
 
-    h3, h4, h5 {
-      color: var(--text-color-1);
-    }
+    .alert.warning {
+        border-color: var(--warning-color);
+        @include icon-warning-filled;
 
-  }
+        h3, h4, h5 {
+        color: var(--warning-color);
+        }
+    } 
 
-  &.mild {
+
+  .alert.mild {
     border-color: var(--mildwarning-color);
     @include icon-warning-outline;
 
@@ -127,7 +188,16 @@ img {
     }
   }
 
-  &.success {
+  .alert.generalinfo {
+    border-color: var(--tertiary-color);
+    @include icon-search-eye;
+
+    h3, h4, h5 {
+      color: var(--text-color-1);
+    }
+  }
+
+  .alert.success {
     border-color: var(--success-color);
     @include icon-checkmark-filled;
 
@@ -136,32 +206,24 @@ img {
     }
   }
 
-  &.warning {
-    border-color: var(--warning-color);
-    @include icon-warning-filled;
-
-    h3, h4, h5 {
-      color: var(--warning-color);
-    }
-  } 
-}
+  
 
     @media (prefers-color-scheme: dark) {
-        .alert {
-            &.generalinfo {
+        
+            .alert.generalinfo {
                 @include icon-search-eye-darkmode;
             }
             
-            &.mild {
+            .alert.mild {
                 @include icon-warning-outline-darkmode;
             }
             
-            &.success {
+            .alert.success {
                 @include icon-checkmark-filled-darkmode;
             }
             
-            &.warning {
+            .alert.warning {
                 @include icon-warning-filled-darkmode;
             } 
-        }
+        
     }
