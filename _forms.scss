@@ -4,73 +4,92 @@
 // This makes forms outside of the content, such as search forms, easier to style
 
 .content form, form.content {
-  margin-bottom: 1.5rem;
-}
-
-// Turn every immediate child element of the form into its own block-level element
-
-form.content > *, .content form > * {
-  padding: 1rem;
-  display: block;
-  border-top: 1px solid var(--tertiary-color);
-}
-
-// Basic styles for the most common form elements
-
-input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
-  display: block;
-  box-sizing: border-box;
-  font-family: var(--monospace-font);
-}
-
-.content > label, .content form > label {
-
-  font-weight: bold;
-
+    margin-bottom: 1.5rem;
+  }
+  
+  // Turn every immediate child element of the form into its own block-level element
+  
+  form.content > div, .content form > div, form.content > fieldset, .content form > fieldset {
+      padding: 1rem;
+      display: block;
+      border-top: 1px solid var(--tertiary-color);
+  }
+  
+  // Basic styles for the most common form elements
+  
   input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
-    width: 100%;
-    font-size: .8rem;
-    padding: .3rem;
-    background: white;
-    border: 1px solid var(--secondary-color);
-    box-shadow: inset 0px 0px .15em 0px rgba(0,0,0,0.3);
-    border-radius: .3rem;
-    margin-top: .5rem;
+      display: block;
+      box-sizing: border-box;
+      font-family: var(--monospace-font);
   }
-
-  textarea {
-    height: 5rem;
+  
+  .content, .content form {
+  
+      input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+          width: 100%;
+          font-size: .8rem;
+          padding: .3rem;
+          background: rgb(240, 240, 240);
+          border: 1px solid var(--secondary-color);
+          box-shadow: inset 0px 0px .15em 0px rgba(0,0,0,0.3);
+          border-radius: .3rem;
+          margin-top: .5rem;
+  
+          &:focus {
+              border-color: var(--primary-color);
+              border-radius: .3rem 0rem 0rem .3rem;
+              outline: var(--primary-color);
+              border-right: 0px;
+          }
+      }
+  
+      > label {
+          font-weight: bold;
+      }
+  
+    textarea {
+      height: 5rem;
+    }
+  
   }
-
-}
-
-// Styles for fieldsets, checkboxes, and radio boxes
-
-.content fieldset, .content form fieldset {
-  border-top: 1px solid var(--tertiary-color);
-
-  legend {
-    font-weight: bold;
-    padding: 0rem .5rem 0rem .5rem;
+  
+      @media (prefers-color-scheme: dark) {
+          .content, .content form {
+  
+              input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+                background: var(--background-color-2);
+                color: var(--text-color-2);
+              }
+          }
+      }
+  
+  // Styles for fieldsets, checkboxes, and radio boxes
+  
+  .content fieldset, .content form fieldset {
+      border-top: 1px solid var(--tertiary-color);
+  
+      legend {
+          font-weight: bold;
+          padding: 0rem .5rem 0rem .5rem;
+      }
   }
-}
-
-input[type=checkbox], input[type=radio] {
-  margin-right: .3rem;
-
-  & + label {
-    font-family: var(--monospace-font);
+  
+  input[type=checkbox], input[type=radio] {
+      margin-right: .3rem;
+  
+      & + label {
+          font-family: var(--monospace-font);
+      }
   }
-}
-
-// Styles for submit and button elements
-
-input[type=submit], button {
-  background-color: var(--secondary-color);
-  border: 1px solid var(--background-color-2);
-  color: var(--text-color-2);
-  border-radius: .3rem;
-  font-size: 1em;
-  padding: .5em;
-  font-family: var(--monospace-font);
-}
+  
+  // Styles for submit and button elements
+  
+  input[type=submit], button {
+      background-color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+      color: var(--text-color-2);
+      border-radius: .3rem;
+      font-size: 1em;
+      padding: .5em;
+      font-family: var(--monospace-font);
+  }
