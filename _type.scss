@@ -8,8 +8,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@600&display=swap');
 
-
-
 /* FONT VARIABLES */
 
   // Make easy font changes with variables.
@@ -30,8 +28,6 @@
 :root {
     font-size: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.3472)), 20px);
     min-height: 0vw;
-
-
 
     // Small text size
     --small-text: 0.8em;
@@ -140,10 +136,10 @@
         list-style: circle;
         padding-left: 1.5em;
 
-        li {
-        p:last-child {
-            margin: 0 !important;
-        }
+            li {
+                p:last-child {
+                    margin: 0 !important;
+                }
         }
     }
 
@@ -152,35 +148,35 @@
     .content {
 
         ol {
-        counter-reset:li; /* Initiate a counter */
-        margin-left:0; /* Remove the default left margin */
-        padding-left:0; /* Remove the default left padding */
+            counter-reset:li; /* Initiate a counter */
+            margin-left:0; /* Remove the default left margin */
+            padding-left:0; /* Remove the default left padding */
         }
         ol > li {
-        position:relative; /* Create a positioning context */
-        margin:0 0 .5em 2em; /* Give each list item a left margin to make room for the numbers */
+            position:relative; /* Create a positioning context */
+            margin:0 0 .5em 2em; /* Give each list item a left margin to make room for the numbers */
 
-        list-style:none; /* Disable the normal item numbering */
+            list-style:none; /* Disable the normal item numbering */
 
-        p:last-child {
-            margin: 0 !important;
-        }
+            p:last-child {
+                margin: 0 !important;
+            }
 
         }
         ol > li:before {
-        content:counter(li); /* Use the counter as content */
-        counter-increment:li; /* Increment the counter by 1 */
-        /* Position and style the number */
-        position:absolute;
-        top:-2px;
-        left:-2em;
-        width: 1.3em;
-        font-weight:bold;
-        text-align:center;
-        padding: .15em; 
+            content:counter(li); /* Use the counter as content */
+            counter-increment:li; /* Increment the counter by 1 */
+            /* Position and style the number */
+            position:absolute;
+            top:-2px;
+            left:-2em;
+            width: 1.3em;
+            font-weight:bold;
+            text-align:center;
+            padding: .15em; 
 
-        background-color: var(--background-color-1);
-        font-family: var(--monospace-font);
+            background-color: var(--background-color-1);
+            font-family: var(--monospace-font);
         }
 
         ol ol li:last-child {margin-bottom:0;}
