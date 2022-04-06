@@ -3,21 +3,32 @@
 // The Simple Navigation Bar
 
 nav {
-  a {
-    text-decoration: none;
-  }
+
+    li {
+
+        transition: all .4s ease;
+
+        a {
+            text-decoration: none;
+            transition: all .4s ease;
+        }
+    }
 }
 
 
 // Breadcrumb Navigation
 
 nav.breadcrumb {
-  outline: .1rem dashed var(--background-color-2);
+  border: .1rem dashed var(--background-color-2);
+  border-left: none;
+  border-right: none;
+  margin-bottom: 1em;
 
   ul {
     display: flex;
     font-size: .9em;
     flex-wrap: wrap;
+    margin: 0px;
 
     li {
 
@@ -49,34 +60,36 @@ nav.breadcrumb {
 // Drop-down and hamburger menus on steroids
 
 nav.accordion {
+    transition: all .5s ease;
 
-  input[type=checkbox] {
-    display: none;
-  }
-
-  label {
-    padding: .3rem .5rem .3rem .5rem;
-    display: block;
-    border-top: 2px dashed var(--background-color-2);
-
-    &:after {
-      content: " ▼";
+    input[type=checkbox] {
+        display: none;
     }
-  }
 
-  > ul {
-    display: none;
-  }
-  
-  input:checked + ul {display: block;}
-
-  ul {
-    li {
-      a {
-        display: block;
+    label {
         padding: .3rem .5rem .3rem .5rem;
-        border-top: 1px dashed var(--secondary-color);
-      }
+        display: block;
+        border-top: 2px dashed var(--background-color-2);
+        cursor: pointer;
+
+        &:after {
+        content: " ▼";
+        }
     }
-  }
+
+    > ul {
+        display: none;
+    }
+    
+    input:checked + ul {display: block;}
+
+    ul {
+        li {
+            a {
+                display: block;
+                padding: .3rem .5rem .3rem .5rem;
+                border-top: 1px dashed var(--secondary-color);
+            }
+        }
+    }
 }
