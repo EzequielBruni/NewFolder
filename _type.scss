@@ -192,20 +192,7 @@
         color: var(--primary-color);
 
         &:hover {
-        color: var(--secondary-color);
-        }
-    }
-
-
-/* BLOCKQUOTE */
-
-    blockquote {
-    margin-left: 3em;
-    font-family: var(--monospace-font);
-    font-size: 1.1em;
-
-        p {
-        margin: 0px;
+        color: var(--link-hover);
         }
     }
 
