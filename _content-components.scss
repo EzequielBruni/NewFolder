@@ -140,34 +140,41 @@ table {
 
 // Some general styles for alert boxes.
 
-.alert, .notice1, .notice2, .notice3, .notice4 {
-  background-color: var(--background-color-1);
-  padding: 1rem 1rem 1rem 2.5rem;
-  border-left: .3rem solid var(--tertiary-color);
-  background-repeat: no-repeat;
-  background-position: -1rem -1rem;
-  background-size: 5rem;
-  margin-bottom: .5em;
-  background-blend-mode: overlay;
+.alert {
+    background-color: var(--background-color-1);
+    padding: 1rem 1rem 1rem 2.5rem;
+    border-left: .3rem solid var(--tertiary-color);
+    background-repeat: no-repeat;
+    background-position: -1rem -1rem;
+    background-size: 5rem;
+    margin-bottom: .5em;
+    
 
-  h2, h3, h4, h5, p {
-    margin: 0;
-  }
+    h2, h3, h4, h5, p {
+        margin: 0;
+    }
 
-  p {
-    font-size: .9em;
-  }
+    p {
+        font-size: .9em;
+    }
 
-  a:hover {
-    color: var(--background-color-2);
-  }
+    a:hover {
+        color: var(--background-color-2);
+    }
 
-  code {
-    background: var(--background-color-2);
-    color: var(--text-color-2);
-  }
-
+    code {
+        background: var(--background-color-2);
+        color: var(--text-color-2);
+    }
 }
+    @supports (background-blend-mode: overlay) {
+
+        .alert {
+            background-blend-mode: overlay;
+        }
+
+    }
+
 
     .alert.warning {
         border-color: var(--warning-color);
