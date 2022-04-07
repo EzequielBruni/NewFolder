@@ -17,7 +17,7 @@
   
   // Basic styles for the most common form elements
   
-  input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+  input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
       display: block;
       box-sizing: border-box;
       font-family: var(--monospace-font);
@@ -25,7 +25,7 @@
   
   .content, .content form {
   
-      input[type=text], input[type=number], input[type=password], input[type=file], textarea, select {
+      input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
           width: 100%;
           font-size: .8rem;
           padding: .3rem;
@@ -37,9 +37,7 @@
   
           &:focus {
               border-color: var(--primary-color);
-              border-radius: .3rem 0rem 0rem .3rem;
               outline: var(--primary-color);
-              border-right: 0px;
           }
       }
   
