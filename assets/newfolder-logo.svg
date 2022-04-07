@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 993 410" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1953.55,-245.137)">
+        <g id="Logo" transform="matrix(1,0,0,1,1657.75,1.13687e-13)">
+            <g id="path125" transform="matrix(0.364391,0,0,0.240859,-150.947,-0.0516578)">
+                <path d="M1246.77,1832.35L1282.27,1847.7L1311.08,1847.7L1312.44,1044.3L1242.29,1021.31C1230.92,1018.44 1226.1,1023.52 1226.1,1040.97L1226.02,1238.64C1226.01,1264.07 1227.21,1272.06 1236.94,1275.56L1247.27,1279.83L1246.77,1832.35Z" style="fill:url(#_Linear1);"/>
+            </g>
+            <g transform="matrix(1.23503,0,0,1.17306,17.5438,35.9756)">
+                <text x="222.518px" y="348.668px" style="font-family:'RockyDisplay-Bold', 'Rocky Display';font-weight:700;font-size:243.379px;fill:white;">NE<tspan x="559.841px " y="348.668px ">W</tspan></text>
+            </g>
+            <g transform="matrix(1,0,0,1,73.4449,303.518)">
+                <text x="222.518px" y="348.668px" style="font-family:'RockyDisplay-Bold', 'Rocky Display';font-weight:700;font-size:243.379px;fill:white;">F<tspan x="366.111px " y="348.668px ">O</tspan>LDER</text>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-372.449,-64.0588,24.9091,-331.479,1369.83,1434.13)"><stop offset="0" style="stop-color:white;stop-opacity:1"/><stop offset="1" style="stop-color:white;stop-opacity:0"/></linearGradient>
+    </defs>
+</svg>
