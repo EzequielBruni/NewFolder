@@ -54,7 +54,7 @@
       @media (prefers-color-scheme: dark) {
           .content, .content form {
   
-              input[type=text], input[type-email] input[type=number], input[type=password], input[type=file], textarea, select {
+              input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
                 background: var(--background-color-2);
                 color: var(--text-color-2);
               }
