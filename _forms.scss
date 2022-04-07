@@ -10,35 +10,35 @@
   // Turn every immediate child element of the form into its own block-level element
   
   form.content > div, .content form > div, form.content > fieldset, .content form > fieldset {
-      padding: 1rem;
-      display: block;
       border-top: 1px solid var(--tertiary-color);
+      display: block;
+      padding: 1rem;
   }
   
   // Basic styles for the most common form elements
   
   input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
-      display: block;
       box-sizing: border-box;
+      display: block;
       font-family: var(--monospace-font);
   }
   
   .content, .content form {
   
       input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
-          width: 100%;
-          font-size: .8rem;
-          padding: .3rem;
-          background: rgb(240, 240, 240);
-          border: 1px solid var(--secondary-color);
-          box-shadow: inset 0px 0px .15em 0px rgba(0,0,0,0.3);
-          border-radius: .3rem;
-          margin-top: .5rem;
+            background: rgb(240, 240, 240);
+            border-radius: .3rem;
+            border: 1px solid var(--secondary-color);
+            box-shadow: inset 0px 0px .15em 0px rgba(0,0,0,0.3);
+            font-size: .8rem;
+            margin-top: .5rem;
+            padding: .3rem;
+            width: 100%;
   
-          &:focus {
-              border-color: var(--primary-color);
-              outline: var(--primary-color);
-          }
+            &:focus {
+                border-color: var(--primary-color);
+                outline: var(--primary-color);
+            }
       }
   
       > label {
@@ -53,11 +53,12 @@
   
       @media (prefers-color-scheme: dark) {
           .content, .content form {
-  
-              input[type=text], input[type=email], input[type=number], input[type=password], input[type=file], textarea, select {
+
+              input[type=text], input[type-email] input[type=number], input[type=password], input[type=file], textarea, select {
                 background: var(--background-color-2);
                 color: var(--text-color-2);
               }
+              
           }
       }
   

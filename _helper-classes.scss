@@ -5,23 +5,23 @@
 
 @media (min-width: 60rem) {
 
-  .float-left {
-    float: left;
-  }
+    .float-left {
+        float: left;
+    }
 
-  .content .float-left {
-    max-width: 45%;
-    margin: 0 1.5rem 0 0;
-  }
+    .content .float-left {
+        margin: 0 1.5rem 0 0;
+        max-width: 45%;
+    }
 
-  .float-right {
-    float: right;
-  }
+    .float-right {
+        float: right;
+    }
 
-  .content .float-right{
-    max-width: 45%;
-    margin: 0 0 0 1.5rem;
-  }
+    .content .float-right{
+        margin: 0 0 0 1.5rem;
+        max-width: 45%;
+    }
 
 }
 
@@ -29,12 +29,12 @@
 // Out-of-bounds floats move things a little bit farther to the left or right, out of bounds
 
 @media (min-width: 1100px) {
-  .content .float-left.float-hard {
-    margin-left: -3rem;
-  }
+    .content .float-left.float-hard {
+        margin-left: -3rem;
+    }
 
-  .content .float-right.float-hard {
-    margin-right: -3rem;
-  }
+    .content .float-right.float-hard {
+        margin-right: -3rem;
+    }
 }
 
