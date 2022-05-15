@@ -6,27 +6,10 @@
 
 // I use the Rubik family for body text, and IBM Plex Mono for prefortmatted text, code examples, and blockquotes. Teko gets used for Headings.
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@600&display=swap');
-
-/* FONT VARIABLES */
-
-  // Make easy font changes with variables.
-:root {
-
-    --body-font: 'Rubik', sans-serif;
-    --heading-font: 'Teko', sans-serif;
-    --monospace-font: 'IBM Plex Mono', monospace;
-    // Small text size
-    --small-text: 0.8em;
-
-}
-
-/* TYPE SCALING */
-
 // This setup allows typefaces to change size as you make the screen wider or smaller.
 
 :root {
-    font-size: clamp(16px, calc(1rem + ((1vw - 7.68px) * 0.3472)), 20px);
+    font-size: clamp(var(--min-font-size), calc(1rem + ((1vw - 7.68px) * 0.3472)), var(--max-font-size));
     min-height: 0vw;
 }
 
@@ -138,49 +121,33 @@ sub {
     padding-left: 1.5em;
 
         li {
+            &::marker {
+                color: var(--primary-color);
+            }
+
             p:last-child {
                 margin: 0 !important;
             }
     }
 }
 
-// More complex styling for ordered lists, so I can style the numbers however I like. Based on a snippet by Roger Johansson. - https://www.456bereastreet.com
-
 .content {
 
     ol {
-        counter-reset:li; /* Initiate a counter */
-        margin-left:0; /* Remove the default left margin */
-        padding-left:0; /* Remove the default left padding */
-    }
+        list-style: decimal;
+        padding-left: 1.5em;
 
-    ol > li {
-        list-style:none; /* Disable the normal item numbering */
-        margin:0 0 .5em 2em; /* Give each list item a left margin to make room for the numbers */
-        position:relative; /* Create a positioning context */
+        li {
+            &::marker {
+                color: var(--primary-color);
+                font-style: italic;
+            }
 
-        p:last-child {
-            margin: 0 !important;
+            p:last-child {
+                margin: 0 !important;
+            }
         }
-
     }
-
-    ol > li:before {
-        /* Position and style the number */
-        background-color: var(--background-color-1);
-        content:counter(li); /* Use the counter as content */
-        counter-increment:li; /* Increment the counter by 1 */
-        font-family: var(--monospace-font);
-        font-weight:bold;
-        left:-2em;
-        padding: .15em; 
-        position:absolute;
-        text-align:center;
-        top:-2px;
-        width: 1.3em;
-    }
-
-    ol ol li:last-child {margin-bottom:0;}
 }
 
 /* LINKS */

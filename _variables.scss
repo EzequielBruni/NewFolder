@@ -1,3 +1,23 @@
+/* GLOBAL TYPE VARIABLES */
+
+// Google font import
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Rubik:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@600&display=swap');
+
+
+:root {
+
+    --body-font: 'Rubik', sans-serif;
+    --heading-font: 'Teko', sans-serif;
+    --monospace-font: 'IBM Plex Mono', monospace;
+    // Small text size
+    --small-text: 0.8em;
+    // Minimum and maximum base font size
+    --min-font-size: 16px;
+    --max-font-size: 20px;
+}
+
+
 
 /* GLOBAL COLOR VARIABLES */
 :root {
